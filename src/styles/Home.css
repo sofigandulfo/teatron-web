@@ -1,0 +1,181 @@
+ /* HOME */
+
+
+ .text-draw {
+     font-family: 'Gliker';
+     font-size: 6em;
+     fill: none;
+     stroke: white;
+     stroke-width: 1;
+     stroke-dasharray: 460;
+     stroke-dashoffset: 460;
+     animation: draw 3s linear forwards, changeColor 1.5s linear forwards 1.8s;
+     filter: drop-shadow(0px 0px 5px transparent);
+ }
+
+ .home-subtitle {
+     font-size: 3em;
+     font-weight: 600;
+     margin-top: 10px;
+ }
+
+ /* Home Data */
+
+ .home-data {
+     margin: 154px auto 20px;
+     width: 40%;
+ }
+
+ .home-data-date {
+     font-size: 2.5em;
+     font-weight: 800;
+     margin-bottom: 20px;
+ }
+
+ .home-data-info {
+     font-size: 1.5em;
+     margin: 0;
+ }
+
+ .ubicacion-icon {
+     margin-right: 10px;
+ }
+
+ .home-direction-link {
+     text-decoration: none;
+     color: white;
+     display: inline-block;
+     padding-bottom: 2px;
+     background-image: linear-gradient(#ffffff 0 0);
+     background-position: 0 100%;
+     background-size: 0% 2.5px;
+     background-repeat: no-repeat;
+     transition:
+         background-size 0.3s,
+         background-position 0s 0.3s;
+ }
+
+ .home-direction-link:hover {
+     background-position: 100% 100%;
+     background-size: 100% 2.5px;
+ }
+
+ .home-reservation-button {
+     font-size: 1.25em;
+     background-color: transparent;
+     color: white;
+     border: 1px white solid;
+     padding: 10px 36px;
+     margin: 0 0 154px;
+     transition: all 0.3s linear;
+ }
+
+ .home-reservation-button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s linear;
+ }
+
+ /* Home Description */
+
+ .home-description-section {
+     margin: 157px auto;
+ }
+
+
+ .home-description-title {
+     font-family: 'Gliker Regular';
+     font-weight: 400;
+     font-size: 4.75em;
+     margin: 0;
+ }
+
+ .home-description-span-teatro {
+     filter: drop-shadow(0px 0px 5px rgba(222, 171, 104, 0.5));
+ }
+
+ .home-description-span-escape {
+     filter: drop-shadow(0px 0px 5px rgba(181, 65, 54, 0.8));
+ }
+
+ .home-description-subtitle {
+     font-size: 2em;
+     font-weight: 600;
+     margin: 15px;
+ }
+
+ .home-description-text {
+     font-size: 1.25em;
+     font-weight: 400;
+     margin: 70px 203px 0;
+ }
+
+ /* COUNTDOWN */
+
+ .countdown-title {
+     font-family: 'Gliker Regular';
+     font-size: 1.12em;
+     font-weight: 900;
+     margin: 157px auto 25px;
+ }
+
+ .countdown {
+     font-size: 1.25em;
+     font-style: italic;
+     display: flex;
+     flex-direction: column;
+
+ }
+
+
+
+ .countdown-div {
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .countdown-span {
+     font-family: 'Gliker Regular';
+     font-style: normal;
+     filter: drop-shadow(0px 0px 5px rgba(222, 171, 104, 0.5));
+ }
+
+ .days {
+     font-size: 18.75em;
+ }
+
+ .hours,
+ .minutes,
+ .seconds {
+     font-size: 4.375em;
+     width: 200px;
+ }
+
+ /* KEYFRAMES */
+
+ @keyframes draw {
+     to {
+         stroke-dashoffset: 0;
+     }
+ }
+
+
+ @keyframes changeColor {
+     0% {
+         fill: transparent;
+         /* Comienza con el texto transparente */
+         filter: drop-shadow(0px 0px 5px transparent);
+     }
+
+     50% {
+         fill: transparent;
+         /* Mantén el texto transparente durante la mitad de la animación */
+         filter: drop-shadow(0px 0px 5px transparent);
+     }
+
+     100% {
+         fill: white;
+         /* Cambia el color a blanco al final de la animación */
+         filter: drop-shadow(0px 0px 5px #DEAB68);
+     }
+ }
