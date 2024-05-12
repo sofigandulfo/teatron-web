@@ -1,12 +1,13 @@
-import Navbar from "../Navbar/Navbar"
+import Navbar from "../Navbar/Navbar";
+import "../../styles/Header.css";
 
 function Header() {
   return (
-      <header>
-        <logo>LOGO</logo>
-        <Navbar />
+    <header>
+      <h1 className="header-logo">TEATRON</h1>
+      <Navbar />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

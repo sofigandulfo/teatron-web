@@ -1,0 +1,31 @@
+header{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, transparent 0%, #FFFFFF 25%, #FFFFFF 75%, transparent 100%);
+    border-image-slice: 1;
+    margin-bottom: 110px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    margin: 25px 0;
+    padding: 0;
+}
+
+nav>ul>li{
+    padding: 0 25px;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
