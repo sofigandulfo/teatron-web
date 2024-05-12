@@ -1,0 +1,31 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent 0%, #FFFFFF 25%, #FFFFFF 75%, transparent 100%);
+    border-image-slice: 1;
+    padding: 76px 0;
+}
+
+footer>p{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+footer>a{
+    margin-right: 20px;
+}
+
+
+.instagram svg {
+    transform: scale(1); /* Establece el tamaño normal del SVG */
+    transition: transform 0.3s ease-in-out; /* Aplica una transición en el tamaño */
+
+  }
+
+.instagram:hover svg {
+      transition: transform 0.3s ease-in-out; /* Aplica una transición en el tamaño */
+    transform: scale(1.3); /* Escala el SVG al 120% cuando el enlace está en estado de hover */
+  }
