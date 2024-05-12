@@ -1,0 +1,189 @@
+  [
+    {
+      "id": 2,
+      "nombre": "Imitose",
+      "descripcion": "Un espectáculo de imitación donde los participantes recrean a famosos personajes de películas, series y cómics.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Sofía Gandulfo", "Alma Betanzo", "Selene Aguirre"],
+      "duracion": "1.5 horas",
+      "hora": "20:00",
+      "espacio": "Escenario",
+      "tipo": "Obra de teatro"
+    },
+    {
+      "id": 3,
+      "nombre": "El Fantasma de la Ópera",
+      "descripcion": "Un clásico musical que narra la historia de un misterioso fantasma que acecha la Ópera de París.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["David Smith", "María Johnson", "Carlos García"],
+      "duracion": "2.5 horas",
+      "hora": "19:30",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 4,
+      "nombre": "Romeo y Julieta",
+      "descripcion": "Una tragedia romántica que sigue el amor prohibido entre Romeo y Julieta, hijos de familias enemigas.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Ana Martínez", "Juan Pérez", "Laura Gómez"],
+      "duracion": "2 horas",
+      "hora": "20:15",
+      "espacio": "Escenario",
+      "tipo": "Obra de teatro"
+    },
+    {
+      "id": 5,
+      "nombre": "Mamma Mia!",
+      "descripcion": "Un musical basado en las canciones del grupo ABBA, que cuenta la historia de una joven en busca de su padre verdadero antes de su boda.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Elena García", "Pablo López", "María Torres"],
+      "duracion": "2.5 horas",
+      "hora": "18:45",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 6,
+      "nombre": "Los Miserables",
+      "descripcion": "Un musical épico que sigue las vidas entrelazadas de varios personajes durante la Revolución Francesa.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Carlos Martínez", "Luisa Ramírez", "Pedro González"],
+      "duracion": "3 horas",
+      "hora": "19:00",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 7,
+      "nombre": "Grease",
+      "descripcion": "Un musical ambientado en los años 50 que sigue el romance entre dos estudiantes de secundaria, Danny y Sandy.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Sofía Rodríguez", "Martín Fernández", "Laura Pérez"],
+      "duracion": "2 horas",
+      "hora": "20:30",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 8,
+      "nombre": "Chicago",
+      "descripcion": "Un musical que narra la historia de dos mujeres que intentan triunfar en el mundo del crimen en la década de 1920 en Chicago.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Alejandro Ramírez", "Luisa Fernández", "Diego Gómez"],
+      "duracion": "2 horas",
+      "hora": "21:00",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 9,
+      "nombre": "El Rey León",
+      "descripcion": "Un musical de Broadway que adapta la película de Disney, contando la historia de Simba y su viaje para reclamar su lugar como rey.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Ana Martínez", "Carlos Pérez", "Lucía Gómez"],
+      "duracion": "2.5 horas",
+      "hora": "17:45",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 10,
+      "nombre": "La Bella y la Bestia",
+      "descripcion": "Un musical basado en el cuento de hadas clásico que sigue la relación entre Bella, una joven inteligente, y Bestia, un príncipe maldecido.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["María García", "Javier Martínez", "Sara López"],
+      "duracion": "2.5 horas",
+      "hora": "19:15",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 11,
+      "nombre": "Hamilton",
+      "descripcion": "Un musical que fusiona hip-hop, jazz, R&B y música clásica para contar la historia de Alexander Hamilton y la Revolución Americana.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Diego Rodríguez", "Elena Pérez", "Carlos Martínez"],
+      "duracion": "2.5 horas",
+      "hora": "20:00",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 12,
+      "nombre": "Les Misérables",
+      "descripcion": "Una adaptación musical del clásico de Victor Hugo, que sigue las vidas de varios personajes en la Francia del siglo XIX.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["Ana Martínez", "Pedro García", "Laura López"],
+      "duracion": "3 horas",
+      "hora": "18:30",
+      "espacio": "Escenario",
+      "tipo": "Musical"
+    },
+    {
+      "id": 13,
+      "nombre": "West Side Story",
+      "descripcion": "Un musical basado en Romeo y Julieta, ambientado en la década de 1950 en Nueva York, que sigue la rivalidad entre dos pandillas callejeras y el romance entre un ex miembro de una pandilla y la hermana del líder de la otra.",
+      "foto": "../assets/caretas.jpg",
+      "integrantes": ["María Pérez", "Juan García", "Laura Martínez"],
+      "duracion": "2.5 horas",
+      "hora": "19:30",
+      "espacio": "Patio",
+      "tipo": "Musical"
+    },
+    {
+      "id": 14,
+      "nombre": "Maratón de Lectura",
+      "descripcion": "Un evento que promueve la lectura y la alfabetización, con actividades interactivas y la participación de autores reconocidos.",
+      "integrantes": ["Luisa Pérez", "Carlos Gómez", "Ana Torres"],
+      "duracion": "6 horas",
+      "hora": "10:30",
+      "espacio": "Patio",
+      "tipo": "Obra de teatro",
+      "foto": "../assets/caretas.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Fiesta del Color",
+      "descripcion": "Una celebración donde los participantes arrojan polvos de colores al aire, creando un paisaje vibrante y lleno de alegría.",
+      "integrantes": ["Diego López", "Sara Martínez", "Andrea Ramírez"],
+      "duracion": "3 horas",
+      "hora": "13:30",
+      "espacio": "Patio",
+      "tipo": "Obra de teatro",
+      "foto": "../assets/caretas.jpg"
+    },
+    {
+      "id": 16,
+      "nombre": "Expo Gastronómica Internacional",
+      "descripcion": "Una muestra de la diversidad culinaria del mundo, con chefs internacionales preparando platos exquisitos y clases magistrales de cocina.",
+      "integrantes": ["Javier Martínez", "Elena Pérez", "David Ramírez"],
+      "duracion": "4 horas",
+      "hora": "17:30",
+      "espacio": "Escenario",
+      "tipo": "Obra de teatro",
+      "foto": "../assets/caretas.jpg"
+    },
+    {
+      "id": 17,
+      "nombre": "Feria del Libro Antiguo",
+      "descripcion": "Un mercado de libros raros y antiguos, donde los coleccionistas pueden encontrar verdaderas joyas literarias.",
+      "integrantes": ["Laura Fernández", "Carlos Pérez", "Isabel Gómez"],
+      "duracion": "5 horas",
+      "hora": "11:30",
+      "espacio": "Patio",
+      "tipo": "Obra de teatro",
+      "foto": "../assets/caretas.jpg"
+    },
+    {
+      "id": 18,
+      "nombre": "Taller de Creación de Comics",
+      "descripcion": "Un taller interactivo donde los participantes aprenden los fundamentos del dibujo de cómics y crean sus propias historias.",
+      "integrantes": ["Pedro García", "Ana Fernández", "Luis Martínez"],
+      "duracion": "2 horas",
+      "hora": "16:00",
+      "espacio": "Escenario",
+      "tipo": "Obra de teatro",
+      "foto": "../assets/caretas.jpg"
+    }
+  ]
