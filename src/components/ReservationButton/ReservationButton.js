@@ -1,8 +1,8 @@
 
-function ReservationButton() {
+function ReservationButton({className}) {
   return (
-    <button>
-        Reserva tu asiento
+    <button className={className}>
+        RESERVA TU ASIENTO
     </button>
   )
 }
