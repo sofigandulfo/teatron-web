@@ -2,7 +2,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
+    margin: 157px 15px 15px;
     border-top: 1px solid;
     border-image: linear-gradient(to right, transparent 0%, #FFFFFF 25%, #FFFFFF 75%, transparent 100%);
     border-image-slice: 1;
