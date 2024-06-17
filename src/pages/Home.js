@@ -1,6 +1,4 @@
 import CountdownDate from "../components/Countdown/Countdown";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer.js";
 import ProjectCarrousel from "../components/ProjectCarrousel/ProjectCarrousel";
 import ReservationButton from "../components/ReservationButton/ReservationButton";
 import '../styles/Home.css'
@@ -12,12 +10,11 @@ function Home() {
 
   return (
     <>
-      <Header />
       <svg width="100%" height="200px">
         <text className="text-draw" x="50%" y="40%" textAnchor="middle">TEATRON</text>
         <text className="text-draw" x="50%" y="80%" textAnchor="middle">2024</text>
       </svg>
-      <h2 className="home-subtitle">EDICIÓN TECONTÉ</h2>
+      {/* <h2 className="home-subtitle">EDICIÓN TECONTÉ</h2> */}
 
 
       <div className="home-data">
@@ -29,7 +26,7 @@ function Home() {
       </div>
       <ReservationButton className="home-reservation-button"/>
 
-      <ProjectCarrousel />
+      <ProjectCarrousel title={'PROYECTOS'}/>
 
       <section className="home-description-section">
         <article className="home-description">
@@ -54,8 +51,6 @@ function Home() {
         </article>
         <CountdownDate eventTimestamp={1720182600} />
       </section>
-
-      <Footer />
     </>
   );
 }
