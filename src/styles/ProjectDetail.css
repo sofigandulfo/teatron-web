@@ -1,0 +1,64 @@
+.project-detail-page{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.project-detail{
+    display: flex;
+    margin: 0 auto 100px;
+    flex-direction: column;
+}
+
+.project-detail-container{
+    display: flex;
+
+}
+
+.project-detail-img{
+    max-width: 500px;
+}
+
+.project-detail-info{
+    margin: 25px 0 0 10px;
+    text-align: start;
+}
+
+.project-detail-info>p{
+    font-size: 1em;
+    margin: 0;
+}
+
+.project-detail-primary-info{
+    margin-left: 50px ;
+}
+
+.project-detail-title{
+    font-size: 2em;
+    font-weight: 800;
+    margin-top: 0;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.project-detail-description{
+    font-size: 1.25em;
+    text-align: start;
+}
+
+
+.reserve-button {
+    margin: 36px auto;
+    font-size: 1.25em;
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    padding: 10px 36px;
+    transition: all 0.3s linear;
+}
+
+.reserve-button:hover{
+   background-color: #fff;
+   color: #000;
+   transition: all 0.3s linear;
+}
