@@ -1,10 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 
-function ReservationButton({className}) {
+function ReservationButton({ projectName, className }) {
+  
+  const navigate = useNavigate();
+
+  const handleReservationClick = () => {
+    navigate(`/reservar/${projectName}`);
+  };
+
   return (
-    <button className={className}>
-        RESERVA TU ASIENTO
+    <button onClick={handleReservationClick} className={className}>
+      RESERVA TU ASIENTO
     </button>
-  )
+  );
 }
 
-export default ReservationButton
+
+export default ReservationButton;
