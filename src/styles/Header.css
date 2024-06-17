@@ -16,12 +16,22 @@ nav{
 nav>ul{
     list-style: none;
     display: flex;
-    margin: 25px 0;
+    align-items: center;
+    margin: 0;
     padding: 0;
 }
 
-nav>ul>li{
-    padding: 0 25px;
+nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.25em;
+    padding: 25px 25px;
+}
+
+nav ul li .active{
+    color: #DEAB68;
+    border-top: 3px solid #DEAB68;
 }
 
 .header-logo{

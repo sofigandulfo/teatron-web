@@ -1,10 +1,11 @@
 import Navbar from "../Navbar/Navbar";
 import "../../styles/Header.css";
+import { NavLink } from "react-router-dom"
 
 function Header() {
   return (
     <header>
-      <h1 className="header-logo">TEATRON</h1>
+      <NavLink to="/"><h1 className="header-logo">TEATRON</h1></NavLink>
       <Navbar />
     </header>
   );
