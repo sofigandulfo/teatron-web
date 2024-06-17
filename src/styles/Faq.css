@@ -1,0 +1,49 @@
+.faq-title{
+  font-size: 2.375em;
+  font-weight: 800;
+}
+
+.accordion {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #fff;
+}
+
+.accordion-title {
+  padding: 20px 30px;
+  cursor: pointer;
+  background-color: transparent; 
+  color: #fff;
+  font-size: 1.25em; 
+  font-weight: 700;
+  text-align: start;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-title:hover {
+  background-color: #555;
+}
+
+.accordion-content {
+  display: flex;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  padding: 0 30px;
+  font-size: 1em;
+  text-align: start;
+  color: #ddd;
+  background-color: #222;
+  transition: height 0.5s ease;
+}
+
+.accordion-content.show {
+  overflow: visible;
+  height: 50px; /* o cualquier altura máxima que desees */
+  padding: 20px 30px;
+}
