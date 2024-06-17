@@ -66,7 +66,7 @@
      color: white;
      border: 1px white solid;
      padding: 10px 36px;
-     margin: 0 0 154px;
+     margin: 0 auto 154px;
      transition: all 0.3s linear;
  }
 
@@ -79,7 +79,7 @@
  /* Home Description */
 
  .home-description-section {
-     margin: 157px auto;
+     margin: 157px auto 0;
  }
 
 
@@ -163,19 +163,19 @@
  @keyframes changeColor {
      0% {
          fill: transparent;
-         /* Comienza con el texto transparente */
+
          filter: drop-shadow(0px 0px 5px transparent);
      }
 
      50% {
          fill: transparent;
-         /* Mantén el texto transparente durante la mitad de la animación */
+   
          filter: drop-shadow(0px 0px 5px transparent);
      }
 
      100% {
          fill: white;
-         /* Cambia el color a blanco al final de la animación */
-         filter: drop-shadow(0px 0px 5px #DEAB68);
+/* 
+         filter: drop-shadow(0px 0px 5px #DEAB68); */
      }
  }
