@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
-function ProjectCarrousel() {
+function ProjectCarrousel({ title }) {
 
   const settings = {
     dots: true,
@@ -36,7 +36,7 @@ function ProjectCarrousel() {
 
   return (
     <div className="project-carrousel">
-      <h3 className="project-carrousel-title">PROYECTOS</h3>
+      <h3 className="project-carrousel-title">{title}</h3>
       <Slider {...settings}>   
         {proyectos.map((project) => (
           <div key={project.id}> {/* Cada tarjeta debe estar dentro de un elemento de carrusel separado */}
