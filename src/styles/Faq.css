@@ -1,5 +1,5 @@
-.faq-title{
-  font-size: 2.375em;
+.faq-title {
+  font-size: 1.5em;
   font-weight: 800;
 }
 
@@ -8,18 +8,21 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: transparent;
+  width: 80%; /* Ancho del acordeón ajustado */
+  max-width: 800px; /* Máximo ancho del acordeón */
+  margin: 0 auto;
 }
 
 .accordion-item {
   border-bottom: 1px solid #fff;
-}
+} 
 
 .accordion-title {
-  padding: 20px 30px;
+  padding: 15px 20px; 
   cursor: pointer;
   background-color: transparent; 
   color: #fff;
-  font-size: 1.25em; 
+  font-size: 1.125em; 
   font-weight: 700;
   text-align: start;
   transition: background-color 0.3s ease;
@@ -30,20 +33,119 @@
 }
 
 .accordion-content {
-  display: flex;
-  align-items: center;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 1em;
   text-align: start;
   color: #ddd;
   background-color: #222;
-  transition: height 0.5s ease;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  display: flex;
+  align-items: center; /* Asegura que el contenido esté centrado verticalmente */
 }
 
 .accordion-content.show {
-  overflow: visible;
-  height: 50px; /* o cualquier altura máxima que desees */
-  padding: 20px 30px;
+  max-height: 200px;
+  padding: 15px 20px;
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 1.5em;
+  }
+  
+  .accordion {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .accordion-title {
+    padding: 12px 15px;
+    font-size: 1em;
+  }
+  
+  .accordion-content {
+    font-size: 0.875em;
+    padding: 0;
+  }
+  
+  .accordion-content.show {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .faq-title {
+    font-size: 1.25em;
+  }
+  
+  .accordion {
+    width: 95%;
+    max-width: 400px;
+  }
+  
+  .accordion-title {
+    padding: 10px 12px;
+    font-size: 0.875em;
+  }
+  
+  .accordion-content {
+    font-size: 0.75em;
+    padding: 0;
+  }
+  
+  .accordion-content.show {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .faq-title {
+    font-size: 1.125em;
+  }
+  
+  .accordion {
+    width: 95%;
+    max-width: 350px;
+  }
+  
+  .accordion-title {
+    padding: 8px 10px;
+    font-size: 0.8125em;
+  }
+  
+  .accordion-content {
+    font-size: 0.6875em;
+    padding: 0;
+  }
+  
+  .accordion-content.show {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq-title {
+    font-size: 1em;
+  }
+  
+  .accordion {
+    width: 95%;
+    max-width: 300px;
+  }
+  
+  .accordion-title {
+    padding: 6px 8px;
+    font-size: 0.75em;
+  }
+  
+  .accordion-content {
+    font-size: 0.625em;
+    padding: 0;
+  }
+  
+  .accordion-content.show {
+    padding: 6px 8px;
+  }
 }
