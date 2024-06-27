@@ -1,31 +1,151 @@
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 157px 15px 15px;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent 0%, #FFFFFF 25%, #FFFFFF 75%, transparent 100%);
-    border-image-slice: 1;
-    padding: 76px 0;
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 157px 15px 15px;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent 0%, #FFFFFF 25%, #FFFFFF 75%, transparent 100%);
+  border-image-slice: 1;
+  padding: 76px 0;
+  max-width: 100%;
+  /* Asegura que el footer no se desborde */
+  overflow: hidden;
+  /* Evita que el contenido se desborde */
 }
 
-footer>p{
-    font-size: 1em;
-    font-weight: 700;
+footer>p {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+  /* Asegura que no haya margen adicional */
 }
 
-footer>a{
-    margin-right: 20px;
+footer>a {
+  margin-right: 20px;
 }
-
 
 .instagram svg {
-    transform: scale(1); /* Establece el tamaño normal del SVG */
-    transition: transform 0.3s ease-in-out; /* Aplica una transición en el tamaño */
-
-  }
+  transform: scale(1);
+  /* Establece el tamaño normal del SVG */
+  transition: transform 0.3s ease-in-out;
+  /* Aplica una transición en el tamaño */
+}
 
 .instagram:hover svg {
-      transition: transform 0.3s ease-in-out; /* Aplica una transición en el tamaño */
-    transform: scale(1.3); /* Escala el SVG al 120% cuando el enlace está en estado de hover */
+  transform: scale(1.3);
+  /* Escala el SVG al 130% cuando el enlace está en estado de hover */
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin: 80px 15px 15px;
+    /* Ajuste de márgenes */
+    padding: 40px 0;
+    /* Ajuste de relleno */
   }
+
+  footer>p {
+    font-size: 0.875em;
+    /* Reducción del tamaño de fuente */
+  }
+
+  footer>a {
+    margin-right: 10px;
+    /* Reducción del margen derecho */
+  }
+
+  .instagram svg {
+    transform: scale(0.9);
+    /* Tamaño reducido del SVG */
+  }
+
+  .instagram:hover svg {
+    transform: scale(1.1);
+    /* Escala al 110% en hover */
+  }
+}
+
+@media (max-width: 425px) {
+  footer {
+
+    display: flex;
+    margin: 40px 15px 15px;
+    padding: 20px 0;
+    text-align: center;
+
+  }
+
+  footer>p {
+    font-size: 0.75em;
+    /* Reducción adicional del tamaño de fuente */
+  }
+
+  footer>a {
+    margin-right: 5px;
+    /* Reducción adicional del margen derecho */
+  }
+
+  .instagram svg {
+    transform: scale(0.8);
+    /* Tamaño reducido del SVG */
+  }
+
+  .instagram:hover svg {
+    transform: scale(1.0);
+    /* Escala al 100% en hover */
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    margin: 30px 15px 15px;
+    /* Ajuste de márgenes para dispositivos más pequeños */
+  }
+
+  footer>p {
+    font-size: 0.6875em;
+    /* Reducción adicional del tamaño de fuente */
+  }
+
+  footer>a {
+    margin-right: 5px;
+    /* Reducción adicional del margen derecho */
+  }
+
+  .instagram svg {
+    transform: scale(0.75);
+    /* Tamaño reducido del SVG */
+  }
+
+  .instagram:hover svg {
+    transform: scale(0.95);
+    /* Escala al 95% en hover */
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    margin: 20px 15px 15px;
+    /* Ajuste de márgenes para dispositivos más pequeños */
+  }
+
+  footer>p {
+    font-size: 0.625em;
+    /* Reducción adicional del tamaño de fuente */
+  }
+
+  footer>a {
+    margin-right: 3px;
+    /* Reducción adicional del margen derecho */
+  }
+
+  .instagram svg {
+    transform: scale(0.7);
+    /* Tamaño reducido del SVG */
+  }
+
+  .instagram:hover svg {
+    transform: scale(0.9);
+    /* Escala al 90% en hover */
+  }
+}
