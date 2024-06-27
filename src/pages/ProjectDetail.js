@@ -34,10 +34,10 @@ function ProjectDetail() {
               alt={projecto.nombre}
             />
             <div className="project-detail-info">
-              <p>Tipo de proyecto: {projecto.tipo}</p>
-              <p>Duración estimada: {projecto.duracion}</p>
-              <p>Integrantes: {projecto.integrantes}</p>
-              <p>Espacio: {projecto.espacio}</p>
+              <p><strong>Tipo de proyecto:</strong> {projecto.tipo}</p>
+              <p><strong>Duración estimada:</strong> {projecto.duracion}</p>
+              <p><strong>Integrantes:</strong> {projecto.integrantes}</p>
+              <p><strong>Espacio:</strong> {projecto.espacio}</p>
             </div>
           </picture>
           <div className="project-detail-primary-info">
