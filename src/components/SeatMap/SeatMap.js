@@ -1,19 +1,37 @@
-import { useState } from "react";
+import { Snackbar, Alert } from "@mui/material";
+import {useState, useEffect} from 'react';
 import "../../styles/Reservation.css";
 
-function SeatMap({ rows = 8, columns = 10, onSeatChange }) {
+function SeatMap({ rows, columns, onSeatChange, reservedSeats, maxSelectableSeats = 3 }) {
   const [selectedSeats, setSelectedSeats] = useState([]);
+  const [alertMessage, setAlertMessage] = useState("");
 
   const rowLabels = "ABCDEFGH".split("");
 
   const toggleSeat = (row, col) => {
     const seatId = `${row}${col}`;
-    const newSelectedSeats = selectedSeats.includes(seatId)
-      ? selectedSeats.filter((seat) => seat !== seatId)
-      : [...selectedSeats, seatId];
+    let newSelectedSeats;
+
+    if (selectedSeats.includes(seatId)) {
+      newSelectedSeats = selectedSeats.filter((seat) => seat !== seatId);
+    } else {
+      if (selectedSeats.length >= maxSelectableSeats) {
+        setAlertMessage(`No puedes seleccionar más de ${maxSelectableSeats} asientos.`);
+        return;
+      }
+      newSelectedSeats = [...selectedSeats, seatId];
+    }
 
     setSelectedSeats(newSelectedSeats);
     onSeatChange(newSelectedSeats);
+  };
+
+  useEffect(() => {
+    setSelectedSeats([]); // Reiniciar la selección cuando cambien las reservas
+  }, [reservedSeats]);
+
+  const handleAlertClose = () => {
+    setAlertMessage("");
   };
 
   return (
@@ -26,13 +44,14 @@ function SeatMap({ rows = 8, columns = 10, onSeatChange }) {
             {Array.from({ length: columns }).map((_, colIndex) => {
               const seatId = `${rowLabels[rowIndex]}${colIndex + 1}`;
               const isSelected = selectedSeats.includes(seatId);
+              const isOccupied = reservedSeats.includes(seatId); // Verifica si el asiento está reservado
               return (
                 <div
                   key={colIndex}
-                  className={`seat ${isSelected ? "selected" : ""} ${
+                  className={`seat ${isSelected ? "selected" : ""} ${isOccupied ? "unavailable" : ""} ${
                     colIndex === 5 ? "spacer" : ""
                   }`}
-                  onClick={() => toggleSeat(rowLabels[rowIndex], colIndex + 1)}
+                  onClick={() => !isOccupied && toggleSeat(rowLabels[rowIndex], colIndex + 1)}
                 >
                   {colIndex + 1}
                 </div>
@@ -43,19 +62,26 @@ function SeatMap({ rows = 8, columns = 10, onSeatChange }) {
         ))}
       </div>
       <div className="seat-legend">
+        <div className="seat seat-1 selected"></div>
+        <div className="seat seat-2 available"></div>
+        <div className="seat seat-3 unavailable"></div>
 
-          <div className="seat seat-1 selected"></div>
-          <div className="seat seat-2 available"></div>
-          <div className="seat seat-3 unavailable"></div>
-
-          <div className="seat-info seat-4 selected">TUS ASIENTOS</div>
-          <div className="seat-info seat-5 available">DISPONIBLE</div>
-          <div className="seat-info seat-6 unavailable">NO DISPONIBLE</div>
-
+        <div className="seat-info seat-4 selected">TUS ASIENTOS</div>
+        <div className="seat-info seat-5 available">DISPONIBLE</div>
+        <div className="seat-info seat-6 unavailable">NO DISPONIBLE</div>
       </div>
+      <Snackbar
+        open={Boolean(alertMessage)}
+        autoHideDuration={6000}
+        onClose={handleAlertClose}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert onClose={handleAlertClose} severity="warning" sx={{ width: "100%" }}>
+          {alertMessage}
+        </Alert>
+      </Snackbar>
     </>
   );
 }
 
 export default SeatMap;
-
