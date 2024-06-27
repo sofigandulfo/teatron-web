@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import CountdownDate from "../components/Countdown/Countdown";
-import ProjectCarrousel from "../components/ProjectCarrousel/ProjectCarrousel";
-import ReservationButton from "../components/ReservationButton/ReservationButton";
+import CountdownDate from "../components/Countdown/Countdown.js";
+import ProjectCarrousel from "../components/ProjectCarrousel/ProjectCarrousel.js";
+import ReservationButton from "../components/ReservationButton/ReservationButton.js";
 import '../styles/Home.css'
 import UbicacionIcon from '../assets/icons/Ubicacion.js';
 
