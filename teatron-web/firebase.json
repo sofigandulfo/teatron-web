@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "teatron-web",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
