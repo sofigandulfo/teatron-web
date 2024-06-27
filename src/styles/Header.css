@@ -1,41 +1,217 @@
-header{
+header {
     background-color: transparent;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, transparent 0%, #FFFFFF 25%, #FFFFFF 75%, transparent 100%);
     border-image-slice: 1;
     margin-bottom: 110px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden; /* Añadir esta línea para evitar el desbordamiento horizontal */
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten y no se desborden */
 }
 
-nav>ul{
+nav > ul {
     list-style: none;
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten y no se desborden */
 }
 
-nav>ul>li>a{
+nav > ul > li > a {
     color: white;
     text-decoration: none;
-    align-items: center;
     font-size: 1.25em;
     padding: 25px 25px;
 }
 
-nav ul li .active{
+nav ul li .active {
     color: #DEAB68;
     border-top: 3px solid #DEAB68;
 }
 
-.header-logo{
+.header-logo {
     display: flex;
     align-items: center;
     padding: 0 25px;
+    margin: 5px;
+}
+
+.logo-teatron {
+    width: 75px;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 70px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Ajustar según la altura de tu header */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav > ul > li > a {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    .header-logo {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .logo-teatron {
+        width: 60px;
+    }
+
+    .user-button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .user-menu {
+        flex-direction: column;
+    }
+
+    .user-menu a,
+    .user-menu button {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        padding: 0;
+        margin: 5px 0;
+    }
+
+    .logo-teatron {
+        width: 50px;
+    }
+
+    .user-button {
+        padding: 8px 10px;
+        font-size: 0.875em;
+    }
+}
+
+@media (max-width: 425px) {
+    .header-logo {
+        margin: 5px 0;
+    }
+
+    .logo-teatron {
+        width: 45px;
+    }
+
+    .menu-button {
+        font-size: 1.25em;
+    }
+
+    nav > ul > li > a {
+        font-size: 1em;
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header-logo {
+        margin: 3px 0;
+    }
+
+    .logo-teatron {
+        width: 40px;
+    }
+
+    .menu-button {
+        font-size: 1.125em;
+    }
+
+    nav > ul > li > a {
+        font-size: 0.9375em;
+        padding: 18px 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-logo {
+        margin: 2px 0;
+    }
+
+    .logo-teatron {
+        width: 35px;
+    }
+
+    .menu-button {
+        font-size: 1em;
+    }
+
+    nav > ul > li > a {
+        font-size: 0.875em;
+        padding: 15px 10px;
+    }
 }
