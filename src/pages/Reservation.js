@@ -21,6 +21,7 @@ import MuiAlert from "@mui/material/Alert";
 
 const auth = getAuth();
 
+// Inicializa EmailJS una sola vez, fuera del componente
 emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
 
 function Reservation() {
@@ -35,15 +36,12 @@ function Reservation() {
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [userEmail, setUserEmail] = useState("");
 
-  const handleSeatChange = async (newSelectedSeats) => {
+  const handleSeatChange = (newSelectedSeats) => {
     setSelectedSeats(newSelectedSeats);
   };
 
-  const isValidEmail = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
-  };
+  const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
 
   const handleReservation = async () => {
     if (selectedSeats.length === 0) {
@@ -53,9 +51,7 @@ function Reservation() {
 
     const user = auth.currentUser;
     if (!user || !user.email || !isValidEmail(user.email)) {
-      setError(
-        "Correo electrónico inválido. Por favor, inicie sesión correctamente."
-      );
+      setError("Correo electrónico inválido. Por favor, inicie sesión correctamente.");
       return;
     }
 
@@ -75,18 +71,14 @@ function Reservation() {
         );
 
         if (unavailableSeats.length > 0) {
-          setError(
-            `Los siguientes asientos ya no están disponibles: ${unavailableSeats.join(
-              ", "
-            )}`
-          );
+          setError(`Los siguientes asientos ya no están disponibles: ${unavailableSeats.join(", ")}`);
           setLoading(false);
           return;
         }
       }
 
       // Realizar la reserva
-      const reservationRef = await addDoc(collection(db, "reservations"), {
+      await addDoc(collection(db, "reservations"), {
         userId: user.uid,
         userEmail: user.email,
         projectName: projectName,
@@ -111,10 +103,10 @@ function Reservation() {
 
       // Enviar correo de confirmación usando EmailJS
       const templateParams = {
-        to_email: user.email, // Correo electrónico del usuario
+        to_email: user.email,
         projectName: projectName,
         selected_seats: selectedSeats.join(", "),
-        project_time: proyecto.hora, // Reemplaza con la hora real del proyecto
+        project_time: proyecto.hora,
       };
 
       console.log("Template params:", templateParams);
@@ -129,9 +121,7 @@ function Reservation() {
       setSelectedSeats([]);
     } catch (error) {
       console.error("Error al realizar la reserva:", error);
-      setError(
-        "Hubo un error al realizar la reserva. Por favor, intente nuevamente."
-      );
+      setError("Hubo un error al realizar la reserva. Por favor, intente nuevamente.");
     } finally {
       setLoading(false);
     }

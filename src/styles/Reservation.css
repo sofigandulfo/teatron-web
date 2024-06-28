@@ -33,8 +33,10 @@
 }
 
 .seat {
+  font-family: 'Inter', sans-serif;
   font-size: 1.125em;
   font-weight: 100;
+  /* Cambiado de 'normal' a '100' */
   color: #000;
   width: 28px;
   height: 28px;
@@ -214,17 +216,18 @@
   flex-wrap: wrap;
 }
 
-.project-buttons > .btn {
+.project-buttons>.btn {
   font-size: 0.9375em;
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 20px;
   padding: 12px 45px;
-  margin: 0 10px 10px 0; /* Asegura que los botones tengan margen uniforme */
+  margin: 0 10px 10px 0;
+  /* Asegura que los botones tengan margen uniforme */
 }
 
-.project-buttons > .btn:first-child {
+.project-buttons>.btn:first-child {
   padding: 12px 55px;
 }
 
@@ -323,7 +326,7 @@
     margin-bottom: 10px;
   }
 
-  .project-buttons > .btn {
+  .project-buttons>.btn {
     font-size: 0.875em;
     padding: 10px 40px;
     margin: 0 8px;
@@ -393,7 +396,7 @@
     font-size: 0.6875em;
   }
 
-  .project-buttons > .btn {
+  .project-buttons>.btn {
     font-size: 0.875em;
     padding: 10px 40px;
     margin: 0 8px;
@@ -457,13 +460,13 @@
     font-size: 0.625em;
   }
 
-  .project-buttons > .btn {
+  .project-buttons>.btn {
     font-size: 0.875em;
     padding: 10px 40px;
     margin: 0 8px;
   }
 
-  .project-buttons > .btn:first-child {
+  .project-buttons>.btn:first-child {
     padding: 12px 50px;
   }
 }
@@ -520,13 +523,13 @@
     font-size: 0.625em;
   }
 
-  .project-buttons > .btn {
+  .project-buttons>.btn {
     font-size: 0.75em;
     padding: 8px 30px;
     margin: 0 6px;
   }
 
-  .project-buttons > .btn:first-child {
+  .project-buttons>.btn:first-child {
     padding: 10px 40px;
   }
 }
@@ -542,12 +545,12 @@
 
   .seat {
     font-size: 0.8125em;
-    width: 18px;
-    height: 18px;
+    width: 21px;
+    height: 21px;
   }
 
   .seat.spacer {
-    margin-left: 35px;
+    margin-left: 20px;
   }
 
   .seat-legend {
@@ -574,22 +577,26 @@
   }
 
   .project-name {
-    font-size: 0.6875em;
+    font-size: 0.875em;
     margin-bottom: 5px;
+  }
+
+  .project-espacio{
+    font-size: 0.75em;
   }
 
   .project-ubicacion,
   .project-fecha {
-    font-size: 0.5em;
+    font-size: 0.75em;
   }
 
-  .project-buttons > .btn {
-    font-size: 0.625em;
+  .project-buttons>.btn {
+    font-size: 0.875em;
     padding: 5px 20px;
     margin: 0 3px;
   }
 
-  .project-buttons > .btn:first-child {
+  .project-buttons>.btn:first-child {
     padding: 8px 30px;
   }
 }
@@ -605,12 +612,12 @@
 
   .seat {
     font-size: 0.75em;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
 
   .seat.spacer {
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .seat-legend {
@@ -632,7 +639,7 @@
     height: 80px;
   }
 
-  .project-info {
+  /* .project-info {
     padding: 5px 0 5px 5px;
   }
 
@@ -644,15 +651,15 @@
   .project-ubicacion,
   .project-fecha {
     font-size: 0.5em;
-  }
+  } */
 
-  .project-buttons > .btn {
+  /* .project-buttons>.btn {
     font-size: 0.5em;
     padding: 4px 15px;
     margin: 0 2px;
   }
 
-  .project-buttons > .btn:first-child {
+  .project-buttons>.btn:first-child {
     padding: 6px 20px;
-  }
+  } */
 }

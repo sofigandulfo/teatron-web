@@ -1,5 +1,5 @@
 .faq-title {
-  font-size: 1.5em;
+  font-size: 2em; /* Incrementado para mayor visibilidad */
   font-weight: 800;
 }
 
@@ -18,11 +18,11 @@
 } 
 
 .accordion-title {
-  padding: 15px 20px; 
+  padding: 18px 25px; /* Incrementado el padding para mayor espacio */
   cursor: pointer;
   background-color: transparent; 
   color: #fff;
-  font-size: 1.125em; 
+  font-size: 1.25em; /* Incrementado para mayor visibilidad */
   font-weight: 700;
   text-align: start;
   transition: background-color 0.3s ease;
@@ -35,8 +35,8 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  padding: 0 20px;
-  font-size: 1em;
+  padding: 0 25px; /* Ajustado para mayor espacio */
+  font-size: 1.125em; /* Incrementado para mayor visibilidad */
   text-align: start;
   color: #ddd;
   background-color: #222;
@@ -47,105 +47,105 @@
 
 .accordion-content.show {
   max-height: 200px;
-  padding: 15px 20px;
+  padding: 18px 25px; /* Incrementado para mayor espacio */
 }
 
 @media (max-width: 768px) {
   .faq-title {
-    font-size: 1.5em;
+    font-size: 1.75em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion {
     width: 90%;
-    max-width: 500px;
+    max-width: 600px; /* Incrementado el ancho máximo */
   }
   
   .accordion-title {
-    padding: 12px 15px;
-    font-size: 1em;
+    padding: 15px 20px; /* Ajustado para mayor espacio */
+    font-size: 1.125em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion-content {
-    font-size: 0.875em;
+    font-size: 1em; /* Incrementado para mayor visibilidad */
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 12px 15px;
+    padding: 15px 20px; /* Ajustado para mayor espacio */
   }
 }
 
 @media (max-width: 425px) {
   .faq-title {
-    font-size: 1.25em;
+    font-size: 1.5em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion {
     width: 95%;
-    max-width: 400px;
+    max-width: 450px; /* Incrementado el ancho máximo */
   }
   
   .accordion-title {
-    padding: 10px 12px;
-    font-size: 0.875em;
+    padding: 12px 15px; /* Ajustado para mayor espacio */
+    font-size: 1em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion-content {
-    font-size: 0.75em;
+    font-size: 0.875em; /* Incrementado para mayor visibilidad */
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 10px 12px;
+    padding: 12px 15px; /* Ajustado para mayor espacio */
   }
 }
 
 @media (max-width: 375px) {
   .faq-title {
-    font-size: 1.125em;
+    font-size: 1.375em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion {
     width: 95%;
-    max-width: 350px;
+    max-width: 400px; /* Incrementado el ancho máximo */
   }
   
   .accordion-title {
-    padding: 8px 10px;
-    font-size: 0.8125em;
+    padding: 10px 12px; /* Ajustado para mayor espacio */
+    font-size: 0.9375em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion-content {
-    font-size: 0.6875em;
+    font-size: 0.8125em; /* Incrementado para mayor visibilidad */
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 8px 10px;
+    padding: 10px 12px; /* Ajustado para mayor espacio */
   }
 }
 
 @media (max-width: 320px) {
   .faq-title {
-    font-size: 1em;
+    font-size: 1.25em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion {
     width: 95%;
-    max-width: 300px;
+    max-width: 350px; /* Incrementado el ancho máximo */
   }
   
   .accordion-title {
-    padding: 6px 8px;
-    font-size: 0.75em;
+    padding: 8px 10px; /* Ajustado para mayor espacio */
+    font-size: 0.875em; /* Incrementado para mayor visibilidad */
   }
   
   .accordion-content {
-    font-size: 0.625em;
+    font-size: 0.75em; /* Incrementado para mayor visibilidad */
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 6px 8px;
+    padding: 8px 10px; /* Ajustado para mayor espacio */
   }
 }

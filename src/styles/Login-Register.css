@@ -18,10 +18,16 @@
     border-bottom: 1px solid white;
     padding: 10px;
     color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .password {
     margin: 30px 0 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .button-form {
@@ -99,15 +105,14 @@ p > .link-registro:hover {
     width: 100%;
     margin-bottom: 8px;
 }
-
 @media (max-width: 768px) {
     .title-signin, .title-register {
-        font-size: 1.3em; /* Reducción del tamaño de fuente para tablets */
+        font-size: 1.5em; /* Reducción del tamaño de fuente para tablets */
         margin-bottom: 50px;
     }
 
     .input-form {
-        padding: 8px; /* Reducción del padding para tablets */
+        padding: 10px; /* Reducción del padding para tablets */
     }
 
     .password {
@@ -115,39 +120,39 @@ p > .link-registro:hover {
     }
 
     .button-form {
-        padding: 10px 8px; /* Reducción del padding para tablets */
-        margin: 6px 0;
+        padding: 12px 8px; /* Reducción del padding para tablets */
+        margin: 8px 0;
     }
 
     .forgot-password {
-        font-size: 0.65em; /* Reducción del tamaño de fuente para tablets */
+        font-size: 0.7em; /* Reducción del tamaño de fuente para tablets */
     }
 
     .no-account {
-        font-size: 0.65em; /* Reducción del tamaño de fuente para tablets */
+        font-size: 0.7em; /* Reducción del tamaño de fuente para tablets */
     }
 
     .google-signin-button {
-        padding: 6px 8px; /* Reducción del padding para tablets */
+        padding: 7px 8px; /* Reducción del padding para tablets */
     }
 
     .google-signin-button span {
-        font-size: 12px; /* Reducción del tamaño de fuente para tablets */
+        font-size: 13px; /* Reducción del tamaño de fuente para tablets */
     }
 
     .reset-email-container input {
-        margin-bottom: 6px; /* Reducción del margen inferior para tablets */
+        margin-bottom: 8px; /* Reducción del margen inferior para tablets */
     }
 }
 
 @media (max-width: 480px) {
     .title-signin, .title-register {
-        font-size: 1.2em; /* Reducción del tamaño de fuente para móviles */
+        font-size: 1.3em; /* Reducción del tamaño de fuente para móviles */
         margin-bottom: 40px;
     }
 
     .input-form {
-        padding: 6px; /* Reducción del padding para móviles */
+        padding: 8px; /* Reducción del padding para móviles */
     }
 
     .password {
@@ -155,8 +160,8 @@ p > .link-registro:hover {
     }
 
     .button-form {
-        padding: 8px 6px; /* Reducción del padding para móviles */
-        margin: 4px 0;
+        padding: 10px 6px; /* Reducción del padding para móviles */
+        margin: 6px 0;
     }
 
     .forgot-password {
@@ -168,94 +173,27 @@ p > .link-registro:hover {
     }
 
     .google-signin-button {
-        padding: 5px 6px; /* Reducción del padding para móviles */
+        padding: 6px 6px; /* Reducción del padding para móviles */
     }
 
     .google-signin-button span {
-        font-size: 11px; /* Reducción del tamaño de fuente para móviles */
+        font-size: 12px; /* Reducción del tamaño de fuente para móviles */
     }
 
     .reset-email-container input {
-        margin-bottom: 5px; /* Reducción del margen inferior para móviles */
+        margin-bottom: 6px; /* Reducción del margen inferior para móviles */
     }
 }
 
 @media (max-width: 375px) {
     .title-signin, .title-register {
-        font-size: 1.1em; /* Reducción del tamaño de fuente para móviles */
-        margin-bottom: 30px;
+        font-size: 1.2em; /* Reducción del tamaño de fuente para móviles */
     }
 
-    .input-form {
-        padding: 5px; /* Reducción del padding para móviles */
-    }
-
-    .password {
-        margin: 18px 0 8px; /* Ajuste de márgenes para móviles */
-    }
-
-    .button-form {
-        padding: 7px 5px; /* Reducción del padding para móviles */
-        margin: 3px 0;
-    }
-
-    .forgot-password {
-        font-size: 0.55em; /* Reducción del tamaño de fuente para móviles */
-    }
-
-    .no-account {
-        font-size: 0.55em; /* Reducción del tamaño de fuente para móviles */
-    }
-
-    .google-signin-button {
-        padding: 4px 5px; /* Reducción del padding para móviles */
-    }
-
+ 
     .google-signin-button span {
-        font-size: 10px; /* Reducción del tamaño de fuente para móviles */
+        font-size: 11px; /* Reducción del tamaño de fuente para móviles */
     }
 
-    .reset-email-container input {
-        margin-bottom: 4px; /* Reducción del margen inferior para móviles */
-    }
-}
 
-@media (max-width: 320px) {
-    .title-signin, .title-register {
-        font-size: 1em; /* Reducción del tamaño de fuente para móviles */
-        margin-bottom: 20px;
-    }
-
-    .input-form {
-        padding: 4px; /* Reducción del padding para móviles */
-    }
-
-    .password {
-        margin: 15px 0 6px; /* Ajuste de márgenes para móviles */
-    }
-
-    .button-form {
-        padding: 6px 4px; /* Reducción del padding para móviles */
-        margin: 2px 0;
-    }
-
-    .forgot-password {
-        font-size: 0.5em; /* Reducción del tamaño de fuente para móviles */
-    }
-
-    .no-account {
-        font-size: 0.5em; /* Reducción del tamaño de fuente para móviles */
-    }
-
-    .google-signin-button {
-        padding: 3px 4px; /* Reducción del padding para móviles */
-    }
-
-    .google-signin-button span {
-        font-size: 9px; /* Reducción del tamaño de fuente para móviles */
-    }
-
-    .reset-email-container input {
-        margin-bottom: 3px; /* Reducción del margen inferior para móviles */
-    }
 }

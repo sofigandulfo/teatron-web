@@ -133,14 +133,18 @@
 
 
 @media (max-width: 768px) {
+    .project-card{
+        max-width: 250px; 
+    }
+
     .slick-dots {
-        bottom: -40px !important; /* Ajuste adicional para dispositivos móviles */
+        bottom: -40px !important;
     }
 
     .slick-dots li button:before {
-        width: 10px !important; /* Ancho de los dots más pequeños para móviles */
-        height: 10px !important; /* Alto de los dots más pequeños para móviles */
-        font-size: 8px !important; /* Tamaño de los puntos más pequeños para móviles */
+        width: 10px !important;
+        height: 10px !important;
+        font-size: 8px !important;
     }
 
     .project-carrousel-title {
@@ -154,7 +158,7 @@
     }
 
     .project-carrousel-title {
-        font-size: 1.25em;
+        font-size: 1.3em;
     }
 }
 
@@ -164,20 +168,18 @@
     }
 
     .project-carrousel-title {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
 @media (max-width: 320px) {
     .slick-dots {
-        bottom: -50px !important; /* Ajuste adicional para dispositivos muy pequeños */
+        bottom: -50px !important;
     }
 
     .slick-dots li button:before {
-        width: 8px !important; /* Ancho de los dots más pequeños */
-        height: 8px !important; /* Alto de los dots más pequeños */
-        font-size: 6px !important; /* Tamaño de los puntos más pequeños */
+        width: 8px !important;
+        height: 8px !important;
+        font-size: 6px !important;
     }
-
-
 }

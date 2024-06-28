@@ -7,16 +7,16 @@ header {
     border-image: linear-gradient(to right, transparent 0%, #FFFFFF 25%, #FFFFFF 75%, transparent 100%);
     border-image-slice: 1;
     margin-bottom: 110px;
-    padding: 10px 20px;
+    padding: 15px 25px; /* Incremento en el padding */
     box-sizing: border-box;
     width: 100%;
-    overflow: hidden; /* Añadir esta línea para evitar el desbordamiento horizontal */
+    overflow: hidden;
 }
 
 nav {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten y no se desborden */
+    flex-wrap: wrap;
 }
 
 nav > ul {
@@ -25,14 +25,14 @@ nav > ul {
     align-items: center;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten y no se desborden */
+    flex-wrap: wrap;
 }
 
 nav > ul > li > a {
     color: white;
     text-decoration: none;
-    font-size: 1.25em;
-    padding: 25px 25px;
+    font-size: 1.375em; /* Incremento en el tamaño de fuente */
+    padding: 30px 30px; /* Incremento en el padding */
 }
 
 nav ul li .active {
@@ -43,12 +43,12 @@ nav ul li .active {
 .header-logo {
     display: flex;
     align-items: center;
-    padding: 0 25px;
-    margin: 5px;
+    padding: 0 30px; /* Incremento en el padding */
+    margin: 10px;
 }
 
 .logo-teatron {
-    width: 75px;
+    width: 80px; /* Incremento en el ancho */
 }
 
 .menu-button {
@@ -56,7 +56,7 @@ nav ul li .active {
     background: none;
     border: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.75em; /* Incremento en el tamaño de fuente */
     cursor: pointer;
 }
 
@@ -76,7 +76,8 @@ nav ul li .active {
 
 @media (max-width: 768px) {
     header {
-        margin-bottom: 70px;
+        margin-bottom: 80px; /* Ajuste del margen */
+        padding: 20px 25px; /* Ajuste del padding */
     }
 
     .menu-button {
@@ -97,7 +98,7 @@ nav ul li .active {
         align-items: center;
         width: 100%;
         position: absolute;
-        top: 70px; /* Ajustar según la altura de tu header */
+        top: 70px; /* Ajuste según la altura de tu header */
         left: 0;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 20px;
@@ -115,22 +116,22 @@ nav ul li .active {
     }
 
     nav > ul > li > a {
-        font-size: 1em;
-        padding: 10px 15px;
+        font-size: 1.125em; /* Incremento en el tamaño de fuente */
+        padding: 15px 20px; /* Ajuste del padding */
     }
 
     .header-logo {
         padding: 0;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .logo-teatron {
-        width: 60px;
+        width: 70px; /* Incremento en el ancho */
     }
 
     .user-button {
-        padding: 10px 15px;
-        font-size: 1em;
+        padding: 15px 20px; /* Ajuste del padding */
+        font-size: 1.125em; /* Incremento en el tamaño de fuente */
     }
 
     .user-menu {
@@ -139,79 +140,79 @@ nav ul li .active {
 
     .user-menu a,
     .user-menu button {
-        padding: 8px 10px;
+        padding: 12px 15px; /* Ajuste del padding */
     }
 }
 
 @media (max-width: 480px) {
     .header-logo {
         padding: 0;
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     .logo-teatron {
-        width: 50px;
+        width: 65px; /* Incremento en el ancho */
     }
 
     .user-button {
-        padding: 8px 10px;
-        font-size: 0.875em;
+        padding: 12px 15px; /* Ajuste del padding */
+        font-size: 1em; /* Ajuste del tamaño de fuente */
     }
 }
 
 @media (max-width: 425px) {
     .header-logo {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     .logo-teatron {
-        width: 45px;
+        width: 60px; /* Incremento en el ancho */
     }
 
     .menu-button {
-        font-size: 1.25em;
+        font-size: 1.5em; /* Incremento en el tamaño de fuente */
     }
 
     nav > ul > li > a {
-        font-size: 1em;
-        padding: 20px 15px;
+        font-size: 1.125em; /* Incremento en el tamaño de fuente */
+        padding: 25px 20px; /* Ajuste del padding */
     }
 }
 
 @media (max-width: 375px) {
     .header-logo {
-        margin: 3px 0;
+        margin: 5px 0;
     }
 
     .logo-teatron {
-        width: 40px;
+        width: 55px; /* Incremento en el ancho */
     }
 
     .menu-button {
-        font-size: 1.125em;
+        font-size: 1.25em; /* Incremento en el tamaño de fuente */
     }
 
     nav > ul > li > a {
-        font-size: 0.9375em;
-        padding: 18px 12px;
+        font-size: 1.0625em; /* Incremento en el tamaño de fuente */
+        padding: 22px 18px; /* Ajuste del padding */
     }
 }
 
 @media (max-width: 320px) {
     .header-logo {
-        margin: 2px 0;
+        margin: 5px 0;
     }
 
     .logo-teatron {
-        width: 35px;
+        width: 50px; /* Incremento en el ancho */
     }
 
     .menu-button {
-        font-size: 1em;
+        font-size: 1.125em; /* Incremento en el tamaño de fuente */
     }
 
     nav > ul > li > a {
-        font-size: 0.875em;
-        padding: 15px 10px;
+        font-size: 1em; /* Incremento en el tamaño de fuente */
+        padding: 20px 15px; /* Ajuste del padding */
     }
 }

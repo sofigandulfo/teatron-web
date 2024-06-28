@@ -81,7 +81,7 @@
 }
 
 .home-description-title {
-    font-family: 'Gliker Regular';
+    font-family: 'Gliker';
     font-weight: 400;
     font-size: 2.5em;
     margin: 0;
@@ -110,7 +110,7 @@
 /* COUNTDOWN */
 
 .countdown-title {
-    font-family: 'Gliker Regular';
+    font-family: 'Gliker', sans-serif;
     font-size: 1.12em;
     margin: 120px auto 15px;
     font-weight: 900;
@@ -129,7 +129,7 @@
 }
 
 .countdown-span {
-    font-family: 'Gliker Regular';
+    font-family: 'Gliker';
     font-style: normal;
     filter: drop-shadow(0px 0px 5px rgba(222, 171, 104, 0.5));
     font-size: 0.9em;
@@ -171,285 +171,279 @@
 
 @media (max-width: 768px) {
     .text-draw {
-        font-size: 4em;
+        font-size: 4.5em; /* Ajustado para tablet */
     }
 
     .home-data {
-        width: 60%;
-        margin: 50px auto 50px;
+        width: 60%; /* Ajustado para tablet */
+        margin: 60px auto 60px; /* Ajustado para tablet */
     }
 
     .home-data-date {
-        font-size: 1.75em;
+        font-size: 1.8em; /* Ajustado para tablet */
     }
 
     .home-data-info {
-        font-size: 1em;
-    }
-
-    .ubicacion-icon{
-        width: 13px;
-    }
-
-    .home-reservation-button {
-        font-size: 0.9em;
-        padding: 6px 20px;
+        font-size: 1.1em; /* Ajustado para tablet */
     }
 
     .home-description-title {
-        font-size: 2em;
+        font-size: 2.5em; /* Mantener igual para tablet */
     }
 
     .home-description-subtitle {
-        font-size: 1em;
+        font-size: 1.1em; /* Ajustado para tablet */
     }
 
     .home-description-text {
-        margin: 30px 80px 0;
-        font-size: 0.8em;
+        margin: 30px 100px 0; /* Ajustado para tablet */
     }
 
     .countdown-title {
-        font-size: 1em;
+        font-size: 1.1em; /* Ajustado para tablet */
+        margin: 80px auto 15px; /* Ajustado para tablet */
     }
 
     .countdown-span {
-        font-size: 0.8em;
+        font-size: 0.9em; /* Ajustado para tablet */
     }
 
     .days {
-        font-size: 8em;
+        font-size: 8em; /* Ajustado para tablet */
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 2em;
-        width: 120px;
+        font-size: 2em; /* Ajustado para tablet */
+        width: 120px; /* Ajustado para tablet */
     }
 }
 
 @media (max-width: 480px) {
-    /* .text-draw {
-        font-size: 2.5em;
-    } */
+    .text-draw {
+        font-size: 3.8em; /* Ajustado para teléfono */
+    }
 
     .home-data {
-        width: 80%;
-        margin: 50px auto 50px;
+        width: 80%; /* Ajustado para teléfono */
+        margin: 50px auto 50px; /* Ajustado para teléfono */
     }
 
     .home-data-date {
-        font-size: 1.5em;
+        font-size: 1.6em; /* Ajustado para teléfono */
     }
 
     .home-data-info {
-        font-size: 0.875em;
+        font-size: 1em; /* Ajustado para teléfono */
     }
 
     .home-reservation-button {
-        font-size: 0.8em;
-        padding: 5px 15px;
+        font-size: 1em; /* Ajustado para teléfono */
+        padding: 7px 18px; /* Ajustado para teléfono */
     }
 
     .home-description-title {
-        font-size: 1.75em;
+        font-size: 2.2em; /* Ajustado para teléfono */
     }
 
     .home-description-subtitle {
-        font-size: 0.875em;
+        font-size: 1em; /* Ajustado para teléfono */
     }
 
     .home-description-text {
-        margin: 20px 40px 0;
-        font-size: 0.75em;
+        margin: 20px 60px 0; /* Ajustado para teléfono */
     }
 
     .countdown-title {
-        font-size: 0.875em;
+        font-size: 1em; /* Ajustado para teléfono */
+        margin: 60px auto 15px; /* Ajustado para teléfono */
     }
 
     .countdown-span {
-        font-size: 0.75em;
+        font-size: 0.8em; /* Ajustado para teléfono */
     }
 
     .days {
-        font-size: 6em;
+        font-size: 7em; /* Ajustado para teléfono */
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1.5em;
-        width: 100px;
+        font-size: 1.8em; /* Ajustado para teléfono */
+        width: 110px; /* Ajustado para teléfono */
     }
 }
 
 @media (max-width: 425px) {
     .text-draw {
-        font-size: 3.5em;
+        font-size: 3.5em; /* Ajustado para teléfono */
     }
 
     .home-data {
-        width: 90%;
-        margin: 30px auto 30px;
+        width: 90%; /* Ajustado para teléfono */
+        margin: 40px auto 40px; /* Ajustado para teléfono */
     }
 
     .home-data-date {
-        font-size: 1.25em;
+        font-size: 1.4em; /* Ajustado para teléfono */
     }
 
     .home-data-info {
-        font-size: 0.75em;
+        font-size: 0.9em; /* Ajustado para teléfono */
     }
 
     .home-reservation-button {
-        font-size: 0.75em;
-        padding: 4px 12px;
+        font-size: 0.9em; /* Ajustado para teléfono */
+        padding: 6px 16px; /* Ajustado para teléfono */
     }
 
     .home-description-title {
-        font-size: 1.5em;
+        font-size: 2em; /* Ajustado para teléfono */
     }
 
     .home-description-subtitle {
-        font-size: 0.75em;
+        font-size: 0.9em; /* Ajustado para teléfono */
     }
 
     .home-description-text {
-        margin: 15px 30px 0;
-        font-size: 0.7em;
+        margin: 15px 40px 0; /* Ajustado para teléfono */
+        font-size: 0.8em; /* Ajustado para teléfono */
     }
 
     .countdown-title {
-        font-size: 0.75em;
+        font-size: 0.9em; /* Ajustado para teléfono */
+        margin: 40px auto 15px; /* Ajustado para teléfono */
     }
 
     .countdown-span {
-        font-size: 0.7em;
+        font-size: 0.8em; /* Ajustado para teléfono */
     }
 
     .days {
-        font-size: 5em;
+        font-size: 6em; /* Ajustado para teléfono */
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1.25em;
-        width: 80px;
+        font-size: 1.6em; /* Ajustado para teléfono */
+        width: 100px; /* Ajustado para teléfono */
     }
 }
 
 @media (max-width: 375px) {
     .text-draw {
-        font-size: 3.5em;
+        font-size: 3em; /* Ajustado para teléfono */
     }
 
     .home-data {
-        width: 95%;
-        margin: 15px auto 15px;
+        width: 95%; /* Ajustado para teléfono */
+        margin: 30px auto 30px; /* Ajustado para teléfono */
     }
 
     .home-data-date {
-        font-size: 1.12em;
+        font-size: 1.3em; /* Ajustado para teléfono */
     }
 
     .home-data-info {
-        font-size: 0.6875em; /* Ajustado de 0.75em a 0.6875em */
+        font-size: 0.8em; /* Ajustado para teléfono */
     }
 
     .home-reservation-button {
-        font-size: 0.7em; /* Ajustado de 0.75em a 0.7em */
-        padding: 4px 10px; /* Ajustado el padding */
-        margin-bottom: 80px; /* Reducido de 120px a 80px */
+        font-size: 0.8em; /* Ajustado para teléfono */
+        padding: 5px 14px; /* Ajustado para teléfono */
+        margin-bottom: 60px; /* Ajustado para teléfono */
     }
 
     .home-description-title {
-        font-size: 1.25em; /* Ajustado de 1.5em a 1.25em */
+        font-size: 1.8em; /* Ajustado para teléfono */
     }
 
     .home-description-subtitle {
-        font-size: 0.6875em; /* Ajustado de 0.75em a 0.6875em */
+        font-size: 0.8em; /* Ajustado para teléfono */
     }
 
     .home-description-text {
-        margin: 10px 20px 0; /* Ajustado el margen */
-        font-size: 0.625em; /* Ajustado de 0.7em a 0.625em */
+        margin: 10px 20px 0; /* Ajustado para teléfono */
+        font-size: 0.7em; /* Ajustado para teléfono */
     }
 
     .countdown-title {
-        font-size: 0.6875em; /* Ajustado de 0.75em a 0.6875em */
+        font-size: 0.8em; /* Ajustado para teléfono */
+        margin: 30px auto 15px; /* Ajustado para teléfono */
     }
 
     .countdown-span {
-        font-size: 0.625em; /* Ajustado de 0.7em a 0.625em */
+        font-size: 0.7em; /* Ajustado para teléfono */
     }
 
     .days {
-        font-size: 4em; /* Ajustado de 5em a 4em */
+        font-size: 5em; /* Ajustado para teléfono */
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1em; /* Ajustado de 1.25em a 1em */
-        width: 70px; /* Ajustado el ancho */
+        font-size: 1.4em; /* Ajustado para teléfono */
+        width: 90px; /* Ajustado para teléfono */
     }
 }
 
 @media (max-width: 320px) {
     .text-draw {
-        font-size: 3em; /* Ajustado de 1.75em a 1.5em */
+        font-size: 2.8em; /* Ajustado para teléfono */
     }
 
     .home-data {
-        width: 98%;
+        width: 98%; /* Ajustado para teléfono */
     }
 
     .home-data-date {
-        font-size: 1em; /* Ajustado de 1.12em a 1em */
+        font-size: 1.2em; /* Ajustado para teléfono */
     }
 
     .home-data-info {
-        font-size: 0.625em; /* Ajustado de 0.6875em a 0.625em */
+        font-size: 0.7em; /* Ajustado para teléfono */
     }
 
     .home-reservation-button {
-        font-size: 0.65em; /* Ajustado de 0.7em a 0.65em */
-        padding: 3px 8px; /* Ajustado el padding */
-        margin-bottom: 60px; /* Reducido de 80px a 60px */
+        font-size: 0.7em; /* Ajustado para teléfono */
+        padding: 4px 12px; /* Ajustado para teléfono */
+        margin-bottom: 50px; /* Ajustado para teléfono */
     }
 
     .home-description-title {
-        font-size: 1.12em; /* Ajustado de 1.25em a 1.12em */
+        font-size: 1.5em; /* Ajustado para teléfono */
     }
 
     .home-description-subtitle {
-        font-size: 0.625em; /* Ajustado de 0.6875em a 0.625em */
+        font-size: 0.7em; /* Ajustado para teléfono */
     }
 
     .home-description-text {
-        margin: 10px 15px 0; /* Ajustado el margen */
-        font-size: 0.5625em; /* Ajustado de 0.625em a 0.5625em */
+        margin: 10px 15px 0; /* Ajustado para teléfono */
+        font-size: 0.6em; /* Ajustado para teléfono */
     }
 
     .countdown-title {
-        font-size: 0.625em; /* Ajustado de 0.6875em a 0.625em */
+        font-size: 0.7em; /* Ajustado para teléfono */
+        margin: 20px auto 15px; /* Ajustado para teléfono */
     }
 
     .countdown-span {
-        font-size: 0.5625em; /* Ajustado de 0.625em a 0.5625em */
+        font-size: 0.6em; /* Ajustado para teléfono */
     }
 
     .days {
-        font-size: 4em; /* Ajustado de 5em a 4em */
+        font-size: 4em; /* Ajustado para teléfono */
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1em; /* Ajustado de 1.25em a 1em */
-        width: 70px; /* Ajustado el ancho */
+        font-size: 1.2em; /* Ajustado para teléfono */
+        width: 80px; /* Ajustado para teléfono */
     }
 }
