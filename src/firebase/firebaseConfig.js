@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyC6S5MvpmE0bRO9b-m7pAgdrqJ3oGIgf0M',
+  apiKey: 'REACT_APP_API_KEY',
   authDomain:'teatron-2024.firebaseapp.com',
   projectId: 'teatron-2024',
   storageBucket:'teatron-2024.appspot.com',
