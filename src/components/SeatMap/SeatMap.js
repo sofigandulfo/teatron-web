@@ -6,7 +6,8 @@ function SeatMap({ rows, columns, onSeatChange, reservedSeats, maxSelectableSeat
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [alertMessage, setAlertMessage] = useState("");
 
-  const rowLabels = "ABCDEFGH".split("");
+  // Definir las etiquetas de las filas de A a K
+  const rowLabels = "ABCDEFGHIJK".split("");
 
   const toggleSeat = (row, col) => {
     const seatId = `${row}${col}`;
@@ -38,11 +39,11 @@ function SeatMap({ rows, columns, onSeatChange, reservedSeats, maxSelectableSeat
     <>
       <h1 className="seat-map-header">ESCENARIO</h1>
       <div className="seat-map">
-        {Array.from({ length: rows }).map((_, rowIndex) => (
+        {rowLabels.map((rowLabel, rowIndex) => (
           <div className="seat-row" key={rowIndex}>
-            <div className="seat-label">{rowLabels[rowIndex]}</div>
+            <div className="seat-label">{rowLabel}</div>
             {Array.from({ length: columns }).map((_, colIndex) => {
-              const seatId = `${rowLabels[rowIndex]}${colIndex + 1}`;
+              const seatId = `${rowLabel}${colIndex + 1}`;
               const isSelected = selectedSeats.includes(seatId);
               const isOccupied = reservedSeats.includes(seatId); // Verifica si el asiento está reservado
               return (
@@ -51,13 +52,13 @@ function SeatMap({ rows, columns, onSeatChange, reservedSeats, maxSelectableSeat
                   className={`seat ${isSelected ? "selected" : ""} ${isOccupied ? "unavailable" : ""} ${
                     colIndex === 5 ? "spacer" : ""
                   }`}
-                  onClick={() => !isOccupied && toggleSeat(rowLabels[rowIndex], colIndex + 1)}
+                  onClick={() => !isOccupied && toggleSeat(rowLabel, colIndex + 1)}
                 >
                   {colIndex + 1}
                 </div>
               );
             })}
-            <div className="seat-label">{rowLabels[rowIndex]}</div>
+            <div className="seat-label">{rowLabel}</div>
           </div>
         ))}
       </div>

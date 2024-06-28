@@ -278,6 +278,21 @@
   font-size: 16px;
 }
 
+.login-button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
 @media (max-width: 1024px) {
   .p-info {
     font-size: 0.75em;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Navbar from "../Navbar/Navbar";
 import { NavLink } from "react-router-dom";
-import logoTeatron from '../../assets/icons/logo-t.png';
+import logoTeatron from '../../assets/icons/logo-teatron.png';
 import "../../styles/Header.css";
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';

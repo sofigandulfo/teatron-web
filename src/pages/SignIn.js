@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, sendPasswordResetEmail, onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from '../firebase/firebaseConfig';
 import Alert from '@mui/material/Alert';
@@ -14,18 +14,26 @@ function SignIn() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [successMessage, setSuccessMessage] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setLoggedIn(true);
+        const savedUrl = sessionStorage.getItem("redirectAfterLogin");
+        if (savedUrl) {
+          sessionStorage.removeItem("redirectAfterLogin");
+          navigate(savedUrl); // Redirige a la URL guardada después del inicio de sesión
+        } else {
+          navigate('/');
+        }
       } else {
         setLoggedIn(false);
       }
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [navigate]);
 
   const handleSignIn = async () => {
     try {
@@ -33,7 +41,6 @@ function SignIn() {
       setLoggedIn(true);
       setSuccessMessage("Inicio de sesión exitoso.");
       setError(null);
-      navigate('/');
     } catch (error) {
       console.error(error);
       setError("Error al iniciar sesión. Por favor, verifica tu email y contraseña.");
@@ -48,7 +55,6 @@ function SignIn() {
       setLoggedIn(true);
       setSuccessMessage("Inicio de sesión con Google exitoso.");
       setError(null);
-      navigate('/');
     } catch (error) {
       console.error(error);
       setError("Error al iniciar sesión con Google. Por favor, inténtalo de nuevo más tarde.");

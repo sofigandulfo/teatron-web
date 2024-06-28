@@ -8,7 +8,7 @@ import {
   onSnapshot,
 } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
-import { getAuth } from "firebase/auth";
+import { getAuth, onAuthStateChanged  } from "firebase/auth";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import projectData from "../data/proyectos.json";
@@ -19,9 +19,8 @@ import { Button, CircularProgress, Snackbar } from "@mui/material";
 import emailjs from "emailjs-com";
 import MuiAlert from "@mui/material/Alert";
 
-const auth = getAuth();
 
-// Inicializa EmailJS una sola vez, fuera del componente
+const auth = getAuth();
 emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
 
 function Reservation() {
@@ -37,6 +36,20 @@ function Reservation() {
   const [successMessage, setSuccessMessage] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const unsubscribeAuth = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const savedUrl = sessionStorage.getItem("redirectAfterLogin");
+        if (savedUrl) {
+          sessionStorage.removeItem("redirectAfterLogin");
+          navigate(savedUrl);
+        }
+      }
+    });
+
+    return () => unsubscribeAuth();
+  }, [navigate]);
+
   const handleSeatChange = (newSelectedSeats) => {
     setSelectedSeats(newSelectedSeats);
   };
@@ -51,11 +64,9 @@ function Reservation() {
 
     const user = auth.currentUser;
     if (!user || !user.email || !isValidEmail(user.email)) {
-      setError("Correo electrónico inválido. Por favor, inicie sesión correctamente.");
+      handleLoginRedirect();
       return;
     }
-
-    console.log("Correo del usuario:", user.email);
 
     setLoading(true);
     setError(null);
@@ -71,7 +82,11 @@ function Reservation() {
         );
 
         if (unavailableSeats.length > 0) {
-          setError(`Los siguientes asientos ya no están disponibles: ${unavailableSeats.join(", ")}`);
+          setError(
+            `Los siguientes asientos ya no están disponibles: ${unavailableSeats.join(
+              ", "
+            )}`
+          );
           setLoading(false);
           return;
         }
@@ -109,8 +124,6 @@ function Reservation() {
         project_time: proyecto.hora,
       };
 
-      console.log("Template params:", templateParams);
-
       await emailjs.send(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
@@ -121,7 +134,9 @@ function Reservation() {
       setSelectedSeats([]);
     } catch (error) {
       console.error("Error al realizar la reserva:", error);
-      setError("Hubo un error al realizar la reserva. Por favor, intente nuevamente.");
+      setError(
+        "Hubo un error al realizar la reserva. Por favor, intente nuevamente."
+      );
     } finally {
       setLoading(false);
     }
@@ -175,6 +190,12 @@ function Reservation() {
   } catch (error) {
     projectImage = null;
   }
+
+  const handleLoginRedirect = () => {
+    sessionStorage.setItem("redirectAfterLogin", `/reservar/${projectName}`);
+    navigate("/login");
+    setError("Por favor, inicie sesión para continuar con la reserva.");
+  };
 
   return (
     <>
@@ -260,7 +281,7 @@ function Reservation() {
             </Button>
             <Button
               className="btn"
-              onClick={handleReservation}
+              onClick={auth.currentUser ? handleReservation : handleLoginRedirect}
               disabled={loading}
             >
               {loading ? <CircularProgress size={24} /> : "SIGUIENTE"}
