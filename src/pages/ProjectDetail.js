@@ -17,7 +17,7 @@ function ProjectDetail() {
 
   let projectImage;
   try {
-    projectImage = require(`../assets/${projecto.foto}`);
+    projectImage = require(`../assets/img/${projecto.foto}`);
   } catch (error) {
     projectImage = null;
   }

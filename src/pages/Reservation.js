@@ -186,7 +186,7 @@ function Reservation() {
 
   let projectImage;
   try {
-    projectImage = require(`../assets/${proyecto.foto}`);
+    projectImage = require(`../assets/img/${proyecto.foto}`);
   } catch (error) {
     projectImage = null;
   }

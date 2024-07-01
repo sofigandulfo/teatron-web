@@ -2,8 +2,8 @@
     {
       "id": 1,
       "nombre": "TEATRON",
-      "descripcion": "Pre-inicio. Intervención de la Teatron 2024",
-      "foto": "caretas.avif",
+      "descripcion": "Intervención de la Teatron 2024",
+      "foto": "logo-teatron.png",
       "integrantes": ["Teatron 2024"],
       "duracion": "-",
       "hora": "13:45",
@@ -15,7 +15,7 @@
       "nombre": "MÚSICA",
       "descripcion": "Bloque músical, para disfrutar.",
       "foto": "caretas.avif",
-      "integrantes": [""],
+      "integrantes": ["-"],
       "duracion": "-",
       "hora": "14:00",
       "espacio": "Patio",
@@ -25,7 +25,7 @@
       "id": 3,
       "nombre": "LAS ARGENTAS",
       "descripcion": "Son un conjunto de las mejores escenas de Mónica Argento y María Elena Fuseneco. Ellas son dos vecinas, que luego se convierten en amigas. Estas escenas nos cuentan un día cómico en la vida de ambas.",
-      "foto": "caretas.avif",
+      "foto": "LAS ARGENTAS.avif",
       "integrantes": ["Valentina Mercado, Denise Dottore"],
       "duracion": "6 minutos",
       "hora": "14:30",
@@ -36,7 +36,7 @@
       "id": 4,
       "nombre": "MAMÁ",
       "descripcion": "Mamá tambien ha sido adolescente al igual que yo. Recuerdo que ambas sufrimos y atravesamos muchos desafios durante esa etapa. Mamá abraza. Mamá aguanta. Mamá siempre está.",
-      "foto": "caretas.avif",
+      "foto": "MAMA.avif",
       "integrantes": ["Luisana Castelli"],
       "duracion": "3 minutos",
       "hora": "14:40",
@@ -46,8 +46,8 @@
     {
       "id": 5,
       "nombre": "TEATRON",
-      "descripcion": "Inicio. Intervención de la Teatron 2024",
-      "foto": "caretas.avif",
+      "descripcion": "Intervención de la Teatron 2024",
+      "foto": "logo-teatron.png",
       "integrantes": ["Teatron 2024"],
       "duracion": "-",
       "hora": "14:55",
@@ -70,7 +70,7 @@
       "id": 8,
       "nombre": "LA FAMILIA ES LO PRIMERO",
       "descripcion": "La aparición de un pariente en casa de Juan sin aviso previo llama por completo su atención. Hay algo que lo mantiene en alerta y no deduce muy bien que es. Si son las preguntas incómodas y reiterativas que este familiar le hace, o si lo tensiona saber que su amigo hace más de una semana que no aparece. La familia es lo primero, reflexionar sobre esta frase. ¿Priorizar los vínculos o los valores?",
-      "foto": "caretas.avif",
+      "foto": "FAMILIA.avif",
       "integrantes": ["Felipe Vite, Martina Vite"],
       "duracion": "6 minutos",
       "hora": "15:35",
@@ -81,7 +81,7 @@
       "id": 9,
       "nombre": "ESPERANDO A LA CARROZA",
       "descripcion": "Mamá Cora, muy cerca ya de los ochenta años, vive con uno de sus hijos, quien pasa serios apuros económicos. La familia se reúne un día para un almuerzo, y entre el llanto incesante de un bebé, peleas, ravioles y vestidos rojos, es cuando se plantea el problema: ¿quién se hará cargo de ella llevándosela a casa?",
-      "foto": "caretas.avif",
+      "foto": "CARROZA.avif",
       "integrantes": ["Francisca Frondizi, Santiago Barreto, Lucia Viñas, Joaquin Paez, Sofía De Lio, Tania da Silva"],
       "duracion": "25 minutos",
       "hora": "15:50",
@@ -92,7 +92,7 @@
       "id": 10,
       "nombre": "LA MUSA",
       "descripcion": "Una escritora sin plata y con un gran bloqueo artístico va a comer una muzza y encuentra a su musa: un hombre con una gran historia de amor que terminó fatal.",
-      "foto": "caretas.avif",
+      "foto": "MUSA.avif",
       "integrantes": ["Julieta Del Río, Brunella Abadie, Celeste Ailin Márquez, Guadalupe Zunzunegui, Maiara Farias"],
       "duracion": "11 minutos",
       "hora": "16:25",
@@ -103,7 +103,7 @@
       "id": 11,
       "nombre": "TOC TOC",
       "descripcion": "Un grupo de pacientes con Trastorno Obsesivo Compulsivo (TOC) coinciden en la sala de espera de la consulta de una gran psicóloga con el fin de solucionar sus problemas. La médica no puede llegar a tiempo, por lo que todas se ven obligadas a compartir una espera que parece interminable intentando controlar sus manías, impulsos, obsesiones y rituales.",
-      "foto": "caretas.avif",
+      "foto": "TOC TOC.avif",
       "integrantes": ["Malena Tolosa, Mía Nieto, Alma María, Catalina Miñarro, Helena Seoane, Julieta Neira"],
       "duracion": "8 minutos",
       "hora": "16:45",
@@ -114,7 +114,7 @@
       "id": 12,
       "nombre": "TEATRON",
       "descripcion": "Intervención de la Teatron 2024",
-      "foto": "caretas.avif",
+      "foto": "logo-teatron.png",
       "integrantes": ["Teatron 2024"],
       "duracion": "-",
       "hora": "17:05",
@@ -141,7 +141,7 @@
       "hora": "17:40",
       "espacio": "Patio",
       "tipo": "Obra de teatro",
-      "foto": "caretas.avif"
+      "foto": "HASTA MAÑANA.avif"
     },
     {
       "id": 16,
@@ -152,7 +152,7 @@
       "hora": "17:55",
       "espacio": "Escenario",
       "tipo": "Musical",
-      "foto": "caretas.avif"
+      "foto": "PRIMAVERA.avif"
     },
     {
       "id": 17,
@@ -168,13 +168,13 @@
     {
       "id": 18,
       "nombre": "KNOCK",
-      "descripcion": "-",
+      "descripcion": "Danza",
       "integrantes": ["Naira Garcia Blaya Galzerano"],
       "duracion": "3 minutos",
       "hora": "18:25",
       "espacio": "Escenario",
       "tipo": "Danza",
-      "foto": "caretas.avif"
+      "foto": "KNOCK.avif"
     },
     {
       "id": 19,
@@ -185,7 +185,7 @@
       "hora": "18:35",
       "espacio": "Escenario",
       "tipo": "Obra de teatro",
-      "foto": "caretas.avif"
+      "foto": "MICKY.avif"
     },
     {
       "id": 20,
@@ -196,7 +196,7 @@
       "hora": "18:55",
       "espacio": "Patio",
       "tipo": "Intervención",
-      "foto": "caretas.avif"
+      "foto": "logo-teatron.png"
     },
     {
       "id": 21,
@@ -207,7 +207,7 @@
       "hora": "19:05",
       "espacio": "Patio",
       "tipo": "Obra de teatro",
-      "foto": "caretas.avif"
+      "foto": "COMPLICIDAD.avif"
     },
     {
       "id": 22,
@@ -218,7 +218,7 @@
       "hora": "20:00",
       "espacio": "Patio",
       "tipo": "Obra de teatro",
-      "foto": "caretas.avif"
+      "foto": "CIRCULO.avif"
     },
     {
       "id": 23,
@@ -229,7 +229,7 @@
       "hora": "20:10",
       "espacio": "Patio",
       "tipo": "Obra de teatro",
-      "foto": "caretas.avif"
+      "foto": "PAYASO.avif"
     },
     {
       "id": 24,
@@ -240,9 +240,9 @@
       "hora": "20:20",
       "espacio": "Patio",
       "tipo": "Intervención",
-      "foto": "caretas.avif"
+      "foto": "logo-teatron.png"
     },
-    {
+    { 
       "id": 25,
       "nombre": "HEATHERS: LA ADAPTACIÓN",
       "descripcion": "Una pareja adolescente discute si seguir matando a sus enemigos mientras la amiga de ella y el fantasma de una de sus víctimas intentan hacerles entrar en razón.",
@@ -251,7 +251,7 @@
       "hora": "20:40",
       "espacio": "Escenario",
       "tipo": "Musical",
-      "foto": "caretas.avif"
+      "foto": "HEATHERS.avif"
     },
     {
       "id": 26,
@@ -284,7 +284,7 @@
       "hora": "21:55",
       "espacio": "Patio",
       "tipo": "Obra de teatro",
-      "foto": "caretas.avif"
+      "foto": "IMITOSE.avif"
     },
     {
       "id": 29,
@@ -295,7 +295,7 @@
       "hora": "22:05",
       "espacio": "Patio",
       "tipo": "Obra de teatro",
-      "foto": "caretas.avif"
+      "foto": "PALOS.avif"
     },
     {
       "id": 30,
@@ -306,6 +306,6 @@
       "hora": "22:20",
       "espacio": "Patio",
       "tipo": "Intervención",
-      "foto": "caretas.avif"
+      "foto": "logo-teatron.png"
     }
   ]
