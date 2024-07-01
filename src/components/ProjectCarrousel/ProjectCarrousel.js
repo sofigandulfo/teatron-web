@@ -4,6 +4,7 @@ import "../../styles/ProjectCarrousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import Arrows from '../../assets/icons/Arrows';
 
 function ProjectCarrousel({ title }) {
   const settings = {
@@ -61,7 +62,7 @@ function ProjectCarrousel({ title }) {
         ))}
       </Slider>
       <div className="carousel-instructions">
-        <p>Desliza para ver más proyectos</p>
+       <Arrows transform={"scale(-1, 1)"}/> <p>Desliza para ver más proyectos</p> <Arrows />
       </div>
     </div>
   );

@@ -130,7 +130,7 @@ function Reservation() {
         templateParams
       );
 
-      setSuccessMessage("Reserva confirmada y asientos actualizados!");
+      setSuccessMessage("Reserva confirmada y Email enviado!");
       setSelectedSeats([]);
     } catch (error) {
       console.error("Error al realizar la reserva:", error);

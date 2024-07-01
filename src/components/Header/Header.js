@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from "../Navbar/Navbar";
 import { NavLink } from "react-router-dom";
 import logoTeatron from '../../assets/icons/logo-teatron.png';
@@ -9,10 +9,20 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { auth } from '../../firebase/firebaseConfig';
 
 function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setLoggedIn(!!user);
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -34,15 +44,33 @@ function Header() {
         <ListItem component={NavLink} to="/informacion">
           <ListItemText primary="INFORMACIÓN" />
         </ListItem>
-        <ListItem component={NavLink} to="/login">
-          <ListItemText primary="INICIAR SESIÓN" />
-        </ListItem>
-        <ListItem component={NavLink} to="/registro">
-          <ListItemText primary="REGISTRARSE" />
-        </ListItem>
+        {loggedIn ? (
+          <ListItem onClick={handleLogout}>
+            <ListItemText primary="CERRAR SESIÓN" />
+          </ListItem>
+        ) : (
+          <>
+            <ListItem component={NavLink} to="/login">
+              <ListItemText primary="INICIAR SESIÓN" />
+            </ListItem>
+            <ListItem component={NavLink} to="/registro">
+              <ListItemText primary="REGISTRARSE" />
+            </ListItem>
+          </>
+        )}
       </List>
     </div>
   );
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      setLoggedIn(false);
+      toggleDrawer(false)();
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <header>
@@ -52,7 +80,7 @@ function Header() {
         </h1>
       </NavLink>
       <div className="desktop-nav">
-        <Navbar />
+        <Navbar loggedIn={loggedIn} />
       </div>
       <div className="mobile-nav">
         <IconButton className="menu-button" onClick={toggleDrawer(true)}>
@@ -65,6 +93,5 @@ function Header() {
     </header>
   );
 }
-
 
 export default Header;

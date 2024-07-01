@@ -53,7 +53,7 @@ function Home() {
       </svg>
 
       <div className="home-data">
-        <h3 className="home-data-date">5 DE JULIO · 12:30H</h3>
+        <h3 className="home-data-date">5 DE JULIO · 13:30H</h3>
         <p className="home-data-info">EVENTO DE TEATRO</p>
         <a href="https://maps.app.goo.gl/7x6vMpULyi5JDeb2A" target="_blank" rel="noreferrer noopener" className="home-direction-link">
           <p className="home-data-info">

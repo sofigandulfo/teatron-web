@@ -1,25 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { NavLink, useNavigate } from "react-router-dom";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
-import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase/firebaseConfig';
 import "../../styles/Header.css";
 
-function Navbar() {
+function Navbar({ loggedIn }) {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [loggedIn, setLoggedIn] = useState(false);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setLoggedIn(!!user); // Actualiza el estado de inicio de sesión según el usuario autenticado
-    });
-
-    return () => unsubscribe();
-  }, []);
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -32,9 +23,8 @@ function Navbar() {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      setLoggedIn(false); // Actualiza el estado de inicio de sesión a false
       handleMenuClose();
-      navigate('/login'); // Redirige al usuario a la página principal
+      navigate('/login');
     } catch (error) {
       console.error(error);
     }
@@ -59,7 +49,7 @@ function Navbar() {
             onClose={handleMenuClose}
           >
             {loggedIn ? (
-              <MenuItem onClick={handleLogout} >CERRAR SESIÓN</MenuItem>
+              <MenuItem onClick={handleLogout}>CERRAR SESIÓN</MenuItem>
             ) : (
               <>
                 <MenuItem component={NavLink} to="/login">INICIAR SESIÓN</MenuItem>
