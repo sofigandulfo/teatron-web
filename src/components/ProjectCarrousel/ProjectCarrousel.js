@@ -62,7 +62,7 @@ function ProjectCarrousel({ title }) {
         ))}
       </Slider>
       <div className="carousel-instructions">
-       <Arrows transform={"scale(-1, 1)"}/> <p>Desliza para ver más proyectos</p> <Arrows />
+       <Arrows mirror={true}/> <p>Desliza para ver más proyectos</p> <Arrows />
       </div>
     </div>
   );
