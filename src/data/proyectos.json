@@ -145,25 +145,25 @@
     },
     {
       "id": 16,
-      "nombre": "DESPERTAR EN PRIMAVERA",
-      "descripcion": "La juventud en su plenitud y su contraposición se encuentran en uno de los momentos de revelación más maravillosos",
-      "integrantes": ["Ruth León, Milagros Linale, Martina Sara Pérez, Manuel Denegris, Mailen Losada, Anabella Joniak, Tiara Aguirre, Aether Pavón, Lila Grassi Cragno"],
-      "duracion": "6 minutos",
-      "hora": "17:55",
-      "espacio": "Escenario",
-      "tipo": "Musical",
-      "foto": "PRIMAVERA.avif"
-    },
-    {
-      "id": 17,
       "nombre": "COMO TODAS ESAS MINITAS",
       "descripcion": "El machismo sigue en pie... En esta noche tranquila, en un bar del barrio de Mataderos, un hombre machista, que nunca va a aceptar serlo, hace desagradable la jornada gritando declaraciones contra las mujeres donde las personas de este lugar tratarán de enfrentarlo para no quedarse calladas nunca más.",
       "integrantes": ["Valentina Cazal, Matias Franzoni, Irina Eva Cabaña Galazzi, Mia Martina Falistoco Bargas, Zoe Leyendo, Lucía Milman, Malena Balderrama, Aryana Romero"],
       "duracion": "4 minutos",
-      "hora": "18:10",
+      "hora": "18:00",
       "espacio": "Escenario",
       "tipo": "Obra de teatro",
       "foto": "caretas.avif"
+    },
+    {
+      "id": 17,
+      "nombre": "DESPERTAR EN PRIMAVERA",
+      "descripcion": "La juventud en su plenitud y su contraposición se encuentran en uno de los momentos de revelación más maravillosos",
+      "integrantes": ["Ruth León, Milagros Linale, Martina Sara Pérez, Manuel Denegris, Mailen Losada, Anabella Joniak, Tiara Aguirre, Aether Pavón, Lila Grassi Cragno"],
+      "duracion": "6 minutos",
+      "hora": "18:15",
+      "espacio": "Escenario",
+      "tipo": "Musical",
+      "foto": "PRIMAVERA.avif"
     },
     {
       "id": 18,
