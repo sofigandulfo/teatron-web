@@ -56,7 +56,6 @@ function ProjectCarrousel({ title }) {
       <Slider {...settings}>
         {filteredProjects.map((project) => (
           <div key={project.id}>
-            {/* Cada tarjeta debe estar dentro de un elemento de carrusel separado */}
             <ProjectCard project={project} />
           </div>
         ))}

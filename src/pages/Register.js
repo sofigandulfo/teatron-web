@@ -15,16 +15,9 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      // Registrar al usuario
       await createUserWithEmailAndPassword(auth, email, password);
-
-      // Iniciar sesión automáticamente después del registro
       await signInWithEmailAndPassword(auth, email, password);
-
-      // Redirigir al usuario a la página principal
       navigate('/');
-
-      // Mostrar mensaje de éxito
       setSuccessMessage("Registro exitoso. ¡Bienvenido!");
       setError(null);
     } catch (error) {

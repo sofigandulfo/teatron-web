@@ -2,16 +2,25 @@ import { useState, useEffect } from "react";
 
 function CountdownDate({ eventTimestamp }) {
   const calculateTimeLeft = () => {
-    const difference = eventTimestamp - Math.floor(Date.now() / 1000); // esto es la diferencia en SEGUNDOS
+    const difference = eventTimestamp - Math.floor(Date.now() / 1000);
     let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (60 * 60 * 24)), //segundos, minutos, horas del día
-        hours: Math.floor((difference / (60 * 60)) % 24), // segundos, minutos, resto de horas
-        minutes: Math.floor((difference / 60) % 60), // segundos, resto de minutos
-        seconds: Math.floor(difference % 60), // resto de segundos
-      };
+        days: Math.floor(difference / (60 * 60 * 24)),
+        hours: Math.floor((difference / (60 * 60)) % 24), 
+        minutes: Math.floor((difference / 60) % 60), 
+        seconds: Math.floor(difference % 60), 
+      }
+
+    }
+    else {
+      timeLeft = {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      }
     }
     return timeLeft;
   };

@@ -64,11 +64,6 @@
 }
 
 
-/* 
-.lineup-tablerow:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-} */
-
 .lineup-tablerow:last-child .lineup-td:first-child {
     border-bottom-left-radius: 10px;
 }
@@ -85,12 +80,12 @@
 
 @media (max-width: 768px) {
     .lineup-title {
-        font-size: 1.5em; /* Ajuste para tamaño de pantalla más pequeño */
+        font-size: 1.5em; 
     }
 
     .lineup-th, .lineup-td {
-        font-size: 0.9em; /* Ajuste para tamaño de pantalla más pequeño */
-        padding: 10px; /* Ajuste del padding */
+        font-size: 0.9em;
+        padding: 10px; 
     }
 
     .lineup-table {
@@ -100,12 +95,12 @@
 
 @media (max-width: 425px) {
     .lineup-title {
-        font-size: 1.4em; /* Ajuste para tamaño de pantalla más pequeño */
+        font-size: 1.4em;
     }
 
     .lineup-th, .lineup-td {
-        font-size: 0.8em; /* Ajuste para tamaño de pantalla más pequeño */
-        padding: 8px; /* Ajuste del padding */
+        font-size: 0.8em; 
+        padding: 8px; 
     }
 
     .lineup-table {
@@ -115,22 +110,22 @@
 
 @media (max-width: 424px) {
     .lineup-title {
-        font-size: 1.3em; /* Ajuste para tamaño de pantalla más pequeño */
+        font-size: 1.3em; 
     }
 
     .lineup-th, .lineup-td {
-        font-size: 0.7em; /* Ajuste para tamaño de pantalla más pequeño */
-        padding: 6px; /* Ajuste del padding */
+        font-size: 0.7em;
+        padding: 6px;
     }
 }
 
 @media (max-width: 320px) {
     .lineup-title {
-        font-size: 1.2em; /* Ajuste para tamaño de pantalla más pequeño */
+        font-size: 1.2em; 
     }
 
     .lineup-th, .lineup-td {
-        font-size: 0.6em; /* Ajuste para tamaño de pantalla más pequeño */
-        padding: 5px; /* Ajuste del padding */
+        font-size: 0.6em; 
+        padding: 5px; 
     }
 }

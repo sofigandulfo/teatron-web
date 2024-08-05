@@ -2,11 +2,10 @@ import { Snackbar, Alert } from "@mui/material";
 import {useState, useEffect} from 'react';
 import "../../styles/Reservation.css";
 
-function SeatMap({ rows, columns, onSeatChange, reservedSeats, maxSelectableSeats = 3 }) {
+function SeatMap({ columns, onSeatChange, reservedSeats, maxSelectableSeats = 3 }) {
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [alertMessage, setAlertMessage] = useState("");
 
-  // Definir las etiquetas de las filas de A a K
   const rowLabels = "ABCDEFGHIJK".split("");
 
   const toggleSeat = (row, col) => {
@@ -28,7 +27,7 @@ function SeatMap({ rows, columns, onSeatChange, reservedSeats, maxSelectableSeat
   };
 
   useEffect(() => {
-    setSelectedSeats([]); // Reiniciar la selección cuando cambien las reservas
+    setSelectedSeats([]);
   }, [reservedSeats]);
 
   const handleAlertClose = () => {
@@ -45,7 +44,7 @@ function SeatMap({ rows, columns, onSeatChange, reservedSeats, maxSelectableSeat
             {Array.from({ length: columns }).map((_, colIndex) => {
               const seatId = `${rowLabel}${colIndex + 1}`;
               const isSelected = selectedSeats.includes(seatId);
-              const isOccupied = reservedSeats.includes(seatId); // Verifica si el asiento está reservado
+              const isOccupied = reservedSeats.includes(seatId);
               return (
                 <div
                   key={colIndex}

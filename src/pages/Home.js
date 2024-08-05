@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import CountdownDate from "../components/Countdown/Countdown.js";
 import ProjectCarrousel from "../components/ProjectCarrousel/ProjectCarrousel.js";
-import ReservationButton from "../components/ReservationButton/ReservationButton.js";
 import '../styles/Home.css'
 import UbicacionIcon from '../assets/icons/Ubicacion.js';
 
@@ -12,36 +11,28 @@ function Home() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768 && window.innerWidth > 480) {
-        // Modificar posiciones para pantalla entre 480px y 768px
         setTextPositionTEATRON({ x: '50%', y: '35%' });
         setTextPosition2024({ x: '50%', y: '62%' });
       } else if (window.innerWidth <= 480 && window.innerWidth > 425) {
-        // Modificar posiciones para pantalla entre 425px y 480px
         setTextPositionTEATRON({ x: '50%', y: '35%' });
         setTextPosition2024({ x: '50%', y: '62%' });
       } else if (window.innerWidth <= 425 && window.innerWidth > 375) {
-        // Modificar posiciones para pantalla entre 375px y 425px
         setTextPositionTEATRON({ x: '50%', y: '35%' });
         setTextPosition2024({ x: '50%', y: '58%' });
       } else if (window.innerWidth <= 375 && window.innerWidth > 320) {
-        // Modificar posiciones para pantalla entre 320px y 375px
         setTextPositionTEATRON({ x: '50%', y: '35%' });
         setTextPosition2024({ x: '50%', y: '58%' });
       } else if (window.innerWidth <= 320) {
-        // Modificar posiciones para pantalla menor o igual a 320px
         setTextPositionTEATRON({ x: '50%', y: '35%' });
         setTextPosition2024({ x: '50%', y: '55%' });
       } else {
-        // Default: Pantalla mayor a 768px
         setTextPositionTEATRON({ x: '50%', y: '40%' });
         setTextPosition2024({ x: '50%', y: '80%' });
       }
     };
-    // Ejecutar al cargar y al redimensionar la ventana
     handleResize();
     window.addEventListener('resize', handleResize);
 
-    // Limpiar el event listener en el cleanup de useEffect
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 

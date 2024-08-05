@@ -14,7 +14,6 @@ function SignIn() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [successMessage, setSuccessMessage] = useState(null);
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -23,7 +22,7 @@ function SignIn() {
         const savedUrl = sessionStorage.getItem("redirectAfterLogin");
         if (savedUrl) {
           sessionStorage.removeItem("redirectAfterLogin");
-          navigate(savedUrl); // Redirige a la URL guardada después del inicio de sesión
+          navigate(savedUrl);
         } else {
           navigate('/');
         }

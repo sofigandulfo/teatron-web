@@ -78,8 +78,8 @@ nav ul li .active {
 
 @media (max-width: 768px) {
     header {
-        margin-bottom: 80px; /* Ajuste del margen */
-        padding: 20px 25px; /* Ajuste del padding */
+        margin-bottom: 80px; 
+        padding: 20px 25px;
     }
 
     .menu-button {
@@ -100,7 +100,7 @@ nav ul li .active {
         align-items: center;
         width: 100%;
         position: absolute;
-        top: 70px; /* Ajuste según la altura de tu header */
+        top: 70px;
         left: 0;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 20px;
@@ -118,8 +118,8 @@ nav ul li .active {
     }
 
     nav > ul > li > a {
-        font-size: 1.125em; /* Incremento en el tamaño de fuente */
-        padding: 15px 20px; /* Ajuste del padding */
+        font-size: 1.125em;
+        padding: 15px 20px;
     }
 
     .header-logo {
@@ -128,12 +128,12 @@ nav ul li .active {
     }
 
     .logo-teatron {
-        width: 70px; /* Incremento en el ancho */
+        width: 70px; 
     }
 
     .user-button {
-        padding: 15px 20px; /* Ajuste del padding */
-        font-size: 1.125em; /* Incremento en el tamaño de fuente */
+        padding: 15px 20px; 
+        font-size: 1.125em;
     }
 
     .user-menu {
@@ -142,7 +142,7 @@ nav ul li .active {
 
     .user-menu a,
     .user-menu button {
-        padding: 12px 15px; /* Ajuste del padding */
+        padding: 12px 15px;
     }
 }
 
@@ -153,12 +153,12 @@ nav ul li .active {
     }
 
     .logo-teatron {
-        width: 65px; /* Incremento en el ancho */
+        width: 65px; 
     }
 
     .user-button {
-        padding: 12px 15px; /* Ajuste del padding */
-        font-size: 1em; /* Ajuste del tamaño de fuente */
+        padding: 12px 15px; 
+        font-size: 1em;
     }
 }
 
@@ -168,16 +168,16 @@ nav ul li .active {
     }
 
     .logo-teatron {
-        width: 60px; /* Incremento en el ancho */
+        width: 60px; 
     }
 
     .menu-button {
-        font-size: 1.5em; /* Incremento en el tamaño de fuente */
+        font-size: 1.5em; 
     }
 
     nav > ul > li > a {
-        font-size: 1.125em; /* Incremento en el tamaño de fuente */
-        padding: 25px 20px; /* Ajuste del padding */
+        font-size: 1.125em; 
+        padding: 25px 20px;
     }
 }
 
@@ -187,16 +187,16 @@ nav ul li .active {
     }
 
     .logo-teatron {
-        width: 55px; /* Incremento en el ancho */
+        width: 55px;
     }
 
     .menu-button {
-        font-size: 1.25em; /* Incremento en el tamaño de fuente */
+        font-size: 1.25em;
     }
 
     nav > ul > li > a {
-        font-size: 1.0625em; /* Incremento en el tamaño de fuente */
-        padding: 22px 18px; /* Ajuste del padding */
+        font-size: 1.0625em;
+        padding: 22px 18px; 
     }
 }
 
@@ -206,15 +206,15 @@ nav ul li .active {
     }
 
     .logo-teatron {
-        width: 50px; /* Incremento en el ancho */
+        width: 50px; 
     }
 
     .menu-button {
-        font-size: 1.125em; /* Incremento en el tamaño de fuente */
+        font-size: 1.125em; 
     }
 
     nav > ul > li > a {
-        font-size: 1em; /* Incremento en el tamaño de fuente */
-        padding: 20px 15px; /* Ajuste del padding */
+        font-size: 1em; 
+        padding: 20px 15px; 
     }
 }

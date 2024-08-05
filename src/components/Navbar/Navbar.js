@@ -49,7 +49,7 @@ function Navbar({ loggedIn }) {
             onClose={handleMenuClose}
           >
             {loggedIn ? (
-              <MenuItem onClick={handleLogout}>CERRAR SESIÓN</MenuItem>
+              <MenuItem onClick={handleLogout} sx={{color: "white"}}>CERRAR SESIÓN</MenuItem>
             ) : (
               <>
                 <MenuItem component={NavLink} to="/login">INICIAR SESIÓN</MenuItem>

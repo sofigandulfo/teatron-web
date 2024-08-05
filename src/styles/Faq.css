@@ -1,5 +1,5 @@
 .faq-title {
-  font-size: 2em; /* Incrementado para mayor visibilidad */
+  font-size: 2em; 
   font-weight: 800;
 }
 
@@ -8,8 +8,8 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: transparent;
-  width: 80%; /* Ancho del acordeón ajustado */
-  max-width: 800px; /* Máximo ancho del acordeón */
+  width: 80%; 
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -18,11 +18,11 @@
 } 
 
 .accordion-title {
-  padding: 18px 25px; /* Incrementado el padding para mayor espacio */
+  padding: 18px 25px; 
   cursor: pointer;
   background-color: transparent; 
   color: #fff;
-  font-size: 1.25em; /* Incrementado para mayor visibilidad */
+  font-size: 1.25em;
   font-weight: 700;
   text-align: start;
   transition: background-color 0.3s ease;
@@ -35,117 +35,117 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  padding: 0 25px; /* Ajustado para mayor espacio */
-  font-size: 1.125em; /* Incrementado para mayor visibilidad */
+  padding: 0 25px; 
+  font-size: 1.125em; 
   text-align: start;
   color: #ddd;
   background-color: #222;
   transition: max-height 0.5s ease, padding 0.5s ease;
   display: flex;
-  align-items: center; /* Asegura que el contenido esté centrado verticalmente */
+  align-items: center; 
 }
 
 .accordion-content.show {
   max-height: 200px;
-  padding: 18px 25px; /* Incrementado para mayor espacio */
+  padding: 18px 25px;
 }
 
 @media (max-width: 768px) {
   .faq-title {
-    font-size: 1.75em; /* Incrementado para mayor visibilidad */
+    font-size: 1.75em;
   }
   
   .accordion {
     width: 90%;
-    max-width: 600px; /* Incrementado el ancho máximo */
+    max-width: 600px; 
   }
   
   .accordion-title {
-    padding: 15px 20px; /* Ajustado para mayor espacio */
-    font-size: 1.125em; /* Incrementado para mayor visibilidad */
+    padding: 15px 20px; 
+    font-size: 1.125em;
   }
   
   .accordion-content {
-    font-size: 1em; /* Incrementado para mayor visibilidad */
+    font-size: 1em; 
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 15px 20px; /* Ajustado para mayor espacio */
+    padding: 15px 20px;
   }
 }
 
 @media (max-width: 425px) {
   .faq-title {
-    font-size: 1.5em; /* Incrementado para mayor visibilidad */
+    font-size: 1.5em; 
   }
   
   .accordion {
     width: 95%;
-    max-width: 450px; /* Incrementado el ancho máximo */
+    max-width: 450px; 
   }
   
   .accordion-title {
-    padding: 12px 15px; /* Ajustado para mayor espacio */
-    font-size: 1em; /* Incrementado para mayor visibilidad */
+    padding: 12px 15px;
+    font-size: 1em; 
   }
   
   .accordion-content {
-    font-size: 0.875em; /* Incrementado para mayor visibilidad */
+    font-size: 0.875em;
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 12px 15px; /* Ajustado para mayor espacio */
+    padding: 12px 15px; 
   }
 }
 
 @media (max-width: 375px) {
   .faq-title {
-    font-size: 1.375em; /* Incrementado para mayor visibilidad */
+    font-size: 1.375em;
   }
   
   .accordion {
     width: 95%;
-    max-width: 400px; /* Incrementado el ancho máximo */
+    max-width: 400px; 
   }
   
   .accordion-title {
-    padding: 10px 12px; /* Ajustado para mayor espacio */
-    font-size: 0.9375em; /* Incrementado para mayor visibilidad */
+    padding: 10px 12px; 
+    font-size: 0.9375em; 
   }
   
   .accordion-content {
-    font-size: 0.8125em; /* Incrementado para mayor visibilidad */
+    font-size: 0.8125em; 
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 10px 12px; /* Ajustado para mayor espacio */
+    padding: 10px 12px; 
   }
 }
 
 @media (max-width: 320px) {
   .faq-title {
-    font-size: 1.25em; /* Incrementado para mayor visibilidad */
+    font-size: 1.25em;
   }
   
   .accordion {
     width: 95%;
-    max-width: 350px; /* Incrementado el ancho máximo */
+    max-width: 350px; 
   }
   
   .accordion-title {
-    padding: 8px 10px; /* Ajustado para mayor espacio */
-    font-size: 0.875em; /* Incrementado para mayor visibilidad */
+    padding: 8px 10px; 
+    font-size: 0.875em; 
   }
   
   .accordion-content {
-    font-size: 0.75em; /* Incrementado para mayor visibilidad */
+    font-size: 0.75em; 
     padding: 0;
   }
   
   .accordion-content.show {
-    padding: 8px 10px; /* Ajustado para mayor espacio */
+    padding: 8px 10px; 
   }
 }

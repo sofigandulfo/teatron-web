@@ -36,24 +36,25 @@ function Header() {
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
+      style={{backgroundColor:' #161612'}}
     >
       <List>
-        <ListItem component={NavLink} to="/lineup">
+        <ListItem component={NavLink} to="/lineup" sx={{color: "white"}}>
           <ListItemText primary="LINEUP" />
         </ListItem>
-        <ListItem component={NavLink} to="/informacion">
+        <ListItem component={NavLink} to="/informacion" sx={{color: "white"}}>
           <ListItemText primary="INFORMACIÓN" />
         </ListItem>
         {loggedIn ? (
-          <ListItem onClick={handleLogout}>
+          <ListItem onClick={handleLogout} sx={{color: "white"}}>
             <ListItemText primary="CERRAR SESIÓN" />
           </ListItem>
         ) : (
           <>
-            <ListItem component={NavLink} to="/login">
+            <ListItem component={NavLink} to="/login" sx={{color: "white"}}>
               <ListItemText primary="INICIAR SESIÓN" />
             </ListItem>
-            <ListItem component={NavLink} to="/registro">
+            <ListItem component={NavLink} to="/registro" sx={{color: "white"}}>
               <ListItemText primary="REGISTRARSE" />
             </ListItem>
           </>
@@ -86,7 +87,7 @@ function Header() {
         <IconButton className="menu-button" onClick={toggleDrawer(true)}>
           <MenuIcon style={{ color: 'white' }} />
         </IconButton>
-        <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+        <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)} sx={{'& .MuiDrawer-paper': {backgroundColor: '#161612'}, '& .MuiTypraphy-root': {fontFamily: "Inter"}}}>
           {drawerList()}
         </Drawer>
       </div>

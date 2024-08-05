@@ -72,7 +72,6 @@ function Reservation() {
     setError(null);
 
     try {
-      // Verificar disponibilidad de asientos
       const seatsRef = doc(db, "seats", projectName);
       const seatsDoc = await getDoc(seatsRef);
       if (seatsDoc.exists()) {
@@ -92,7 +91,7 @@ function Reservation() {
         }
       }
 
-      // Realizar la reserva
+
       await addDoc(collection(db, "reservations"), {
         userId: user.uid,
         userEmail: user.email,
@@ -101,7 +100,7 @@ function Reservation() {
         timestamp: new Date(),
       });
 
-      // Actualizar los asientos
+
       if (seatsDoc.exists()) {
         const updatedSeats = seatsDoc.data();
         selectedSeats.forEach((seat) => {
@@ -116,7 +115,6 @@ function Reservation() {
         await setDoc(seatsRef, newSeats);
       }
 
-      // Enviar correo de confirmación usando EmailJS
       const templateParams = {
         to_email: user.email,
         projectName: projectName,

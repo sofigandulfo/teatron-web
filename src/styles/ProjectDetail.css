@@ -8,6 +8,7 @@
     display: flex;
     margin: 0 auto 80px;
     flex-direction: column;
+    width: 100%;
 }
 
 .project-detail-container {
@@ -32,6 +33,7 @@
 
 .project-detail-primary-info {
     margin-left: 40px;
+    width: 100%;
 }
 
 .project-detail-title {
@@ -62,6 +64,7 @@
     background-color: #fff;
     color: #000;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 @media (max-width: 1024px) {
     .project-detail-page {
@@ -84,7 +87,7 @@
 
     .project-detail-img {
         margin: 0 auto;
-        max-width: 400px; /* Ajuste del tamaño de la imagen en pantallas pequeñas */
+        max-width: 400px; 
     }
 
     .project-detail-info {
@@ -97,15 +100,15 @@
     }
 
     .project-detail-title {
-        font-size: 1.2em; /* Reducción del tamaño de la fuente para tabletas */
+        font-size: 1.2em; 
     }
 
     .project-detail-description {
-        font-size: 1em; /* Reducción del tamaño de la fuente para tabletas */
+        font-size: 1em;
     }
 
     .reserve-button {
-        font-size: 0.9em; /* Reducción del tamaño de la fuente para tabletas */
+        font-size: 0.9em; 
         padding: 6px 16px;
     }
 }
@@ -113,7 +116,7 @@
 @media (max-width: 480px) {
     .project-detail-img {
         margin: 0 auto;
-        max-width: 300px; /* Ajuste del tamaño de la imagen en pantallas pequeñas */
+        max-width: 300px;
     }
 
     .project-detail-page {
@@ -121,11 +124,11 @@
     }
 
     .project-detail-title {
-        font-size: 1em; /* Reducción del tamaño de la fuente para dispositivos móviles */
+        font-size: 1em; 
     }
 
     .project-detail-description {
-        font-size: 0.9em; /* Reducción del tamaño de la fuente para dispositivos móviles */
+        font-size: 0.9em; 
     }
 
     .project-detail-info {
@@ -134,14 +137,14 @@
     }
 
     .reserve-button {
-        font-size: 0.8em; /* Reducción del tamaño de la fuente para dispositivos móviles */
+        font-size: 0.8em; 
         padding: 5px 12px;
     }
 }
 
 @media (max-width: 375px) {
     .project-detail-img {
-        max-width: 250px; /* Ajuste del tamaño de la imagen en pantallas muy pequeñas */
+        max-width: 250px;
     }
 
     .project-detail-info {

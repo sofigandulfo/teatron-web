@@ -15,12 +15,12 @@
 /* Home Data */
 
 .home-data {
-    margin: 100px auto 100px; /* Ajustado el margen superior de 154px a 100px */
+    margin: 100px auto 100px; 
     width: 40%;
 }
 
 .home-data-date {
-    font-size: 2em; /* Reducido de 2.5em a 2em */
+    font-size: 2em;
     margin-bottom: 15px;
     font-weight: 800;
     text-wrap: nowrap;
@@ -59,8 +59,8 @@
 }
 
 .home-reservation-button {
-    font-size: 1em; /* Ajustado el tamaño de fuente */
-    padding: 8px 24px; /* Reducido el padding */
+    font-size: 1em;
+    padding: 8px 24px; 
     margin: 0 auto 120px;
     background-color: transparent;
     color: white;
@@ -96,13 +96,13 @@
 }
 
 .home-description-subtitle {
-    font-size: 1.25em; /* Reducido de 2em a 1.25em */
+    font-size: 1.25em; 
     margin: 10px 0;
     font-weight: 600;
 }
 
 .home-description-text {
-    font-size: 1em; /* Reducido de 1.25em a 1em */
+    font-size: 1em; 
     margin: 50px 160px 0;
     font-weight: 400;
 }
@@ -142,11 +142,11 @@
 .hours,
 .minutes,
 .seconds {
-    font-size: 2.5em; /* Reducido de 4.375em a 2.5em */
+    font-size: 2.5em; 
     width: 150px;
 }
 
-/* KEYFRAMES */
+
 
 @keyframes draw {
     to {
@@ -171,279 +171,279 @@
 
 @media (max-width: 768px) {
     .text-draw {
-        font-size: 4.5em; /* Ajustado para tablet */
+        font-size: 4.5em;
     }
 
     .home-data {
-        width: 60%; /* Ajustado para tablet */
-        margin: 60px auto 60px; /* Ajustado para tablet */
+        width: 60%;
+        margin: 60px auto 60px; 
     }
 
     .home-data-date {
-        font-size: 1.8em; /* Ajustado para tablet */
+        font-size: 1.8em; 
     }
 
     .home-data-info {
-        font-size: 1.1em; /* Ajustado para tablet */
+        font-size: 1.1em; 
     }
 
     .home-description-title {
-        font-size: 2.5em; /* Mantener igual para tablet */
+        font-size: 2.5em; 
     }
 
     .home-description-subtitle {
-        font-size: 1.1em; /* Ajustado para tablet */
+        font-size: 1.1em; 
     }
 
     .home-description-text {
-        margin: 30px 100px 0; /* Ajustado para tablet */
+        margin: 30px 100px 0; 
     }
 
     .countdown-title {
-        font-size: 1.1em; /* Ajustado para tablet */
-        margin: 80px auto 15px; /* Ajustado para tablet */
+        font-size: 1.1em;
+        margin: 80px auto 15px; 
     }
 
     .countdown-span {
-        font-size: 0.9em; /* Ajustado para tablet */
+        font-size: 0.9em; 
     }
 
     .days {
-        font-size: 8em; /* Ajustado para tablet */
+        font-size: 8em; 
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 2em; /* Ajustado para tablet */
-        width: 120px; /* Ajustado para tablet */
+        font-size: 2em;
+        width: 120px; 
     }
 }
 
 @media (max-width: 480px) {
     .text-draw {
-        font-size: 3.8em; /* Ajustado para teléfono */
+        font-size: 3.8em; 
     }
 
     .home-data {
-        width: 80%; /* Ajustado para teléfono */
-        margin: 50px auto 50px; /* Ajustado para teléfono */
+        width: 80%;
+        margin: 50px auto 50px; 
     }
 
     .home-data-date {
-        font-size: 1.6em; /* Ajustado para teléfono */
+        font-size: 1.6em;
     }
 
     .home-data-info {
-        font-size: 1em; /* Ajustado para teléfono */
+        font-size: 1em;
     }
 
     .home-reservation-button {
-        font-size: 1em; /* Ajustado para teléfono */
-        padding: 7px 18px; /* Ajustado para teléfono */
+        font-size: 1em; 
+        padding: 7px 18px; 
     }
 
     .home-description-title {
-        font-size: 2.2em; /* Ajustado para teléfono */
+        font-size: 2.2em;
     }
 
     .home-description-subtitle {
-        font-size: 1em; /* Ajustado para teléfono */
+        font-size: 1em;
     }
 
     .home-description-text {
-        margin: 20px 60px 0; /* Ajustado para teléfono */
+        margin: 20px 60px 0;
     }
 
     .countdown-title {
-        font-size: 1em; /* Ajustado para teléfono */
-        margin: 60px auto 15px; /* Ajustado para teléfono */
+        font-size: 1em; 
+        margin: 60px auto 15px; 
     }
 
     .countdown-span {
-        font-size: 0.8em; /* Ajustado para teléfono */
+        font-size: 0.8em; 
     }
 
     .days {
-        font-size: 7em; /* Ajustado para teléfono */
+        font-size: 7em;
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1.8em; /* Ajustado para teléfono */
-        width: 110px; /* Ajustado para teléfono */
+        font-size: 1.8em; 
+        width: 110px; 
     }
 }
 
 @media (max-width: 425px) {
     .text-draw {
-        font-size: 3.5em; /* Ajustado para teléfono */
+        font-size: 3.5em;
     }
 
     .home-data {
-        width: 90%; /* Ajustado para teléfono */
-        margin: 40px auto 40px; /* Ajustado para teléfono */
+        width: 90%;
+        margin: 40px auto 40px; 
     }
 
     .home-data-date {
-        font-size: 1.4em; /* Ajustado para teléfono */
+        font-size: 1.4em; 
     }
 
     .home-data-info {
-        font-size: 0.9em; /* Ajustado para teléfono */
+        font-size: 0.9em;
     }
 
     .home-reservation-button {
-        font-size: 0.9em; /* Ajustado para teléfono */
-        padding: 6px 16px; /* Ajustado para teléfono */
+        font-size: 0.9em; 
+        padding: 6px 16px;
     }
 
     .home-description-title {
-        font-size: 2em; /* Ajustado para teléfono */
+        font-size: 2em; 
     }
 
     .home-description-subtitle {
-        font-size: 0.9em; /* Ajustado para teléfono */
+        font-size: 0.9em;
     }
 
     .home-description-text {
-        margin: 15px 40px 0; /* Ajustado para teléfono */
-        font-size: 0.8em; /* Ajustado para teléfono */
+        margin: 15px 40px 0;
+        font-size: 0.8em; 
     }
 
     .countdown-title {
-        font-size: 0.9em; /* Ajustado para teléfono */
-        margin: 40px auto 15px; /* Ajustado para teléfono */
+        font-size: 0.9em; 
+        margin: 40px auto 15px; 
     }
 
     .countdown-span {
-        font-size: 0.8em; /* Ajustado para teléfono */
+        font-size: 0.8em; 
     }
 
     .days {
-        font-size: 6em; /* Ajustado para teléfono */
+        font-size: 6em; 
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1.6em; /* Ajustado para teléfono */
-        width: 100px; /* Ajustado para teléfono */
+        font-size: 1.6em; 
+        width: 100px; 
     }
 }
 
 @media (max-width: 375px) {
     .text-draw {
-        font-size: 3em; /* Ajustado para teléfono */
+        font-size: 3em;
     }
 
     .home-data {
-        width: 95%; /* Ajustado para teléfono */
-        margin: 30px auto 30px; /* Ajustado para teléfono */
+        width: 95%; 
+        margin: 30px auto 30px;
     }
 
     .home-data-date {
-        font-size: 1.3em; /* Ajustado para teléfono */
+        font-size: 1.3em; 
     }
 
     .home-data-info {
-        font-size: 0.8em; /* Ajustado para teléfono */
+        font-size: 0.8em; 
     }
 
     .home-reservation-button {
-        font-size: 0.8em; /* Ajustado para teléfono */
-        padding: 5px 14px; /* Ajustado para teléfono */
-        margin-bottom: 60px; /* Ajustado para teléfono */
+        font-size: 0.8em; 
+        padding: 5px 14px; 
+        margin-bottom: 60px;
     }
 
     .home-description-title {
-        font-size: 1.8em; /* Ajustado para teléfono */
+        font-size: 1.8em; 
     }
 
     .home-description-subtitle {
-        font-size: 0.8em; /* Ajustado para teléfono */
+        font-size: 0.8em; 
     }
 
     .home-description-text {
-        margin: 10px 20px 0; /* Ajustado para teléfono */
-        font-size: 0.7em; /* Ajustado para teléfono */
+        margin: 10px 20px 0;
+        font-size: 0.7em; 
     }
 
     .countdown-title {
-        font-size: 0.8em; /* Ajustado para teléfono */
-        margin: 30px auto 15px; /* Ajustado para teléfono */
+        font-size: 0.8em; 
+        margin: 30px auto 15px;
     }
 
     .countdown-span {
-        font-size: 0.7em; /* Ajustado para teléfono */
+        font-size: 0.7em; 
     }
 
     .days {
-        font-size: 5em; /* Ajustado para teléfono */
+        font-size: 5em;
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1.4em; /* Ajustado para teléfono */
-        width: 90px; /* Ajustado para teléfono */
+        font-size: 1.4em; 
+        width: 90px; 
     }
 }
 
 @media (max-width: 320px) {
     .text-draw {
-        font-size: 2.8em; /* Ajustado para teléfono */
+        font-size: 2.8em; 
     }
 
     .home-data {
-        width: 98%; /* Ajustado para teléfono */
+        width: 98%; 
     }
 
     .home-data-date {
-        font-size: 1.2em; /* Ajustado para teléfono */
+        font-size: 1.2em; 
     }
 
     .home-data-info {
-        font-size: 0.7em; /* Ajustado para teléfono */
+        font-size: 0.7em; 
     }
 
     .home-reservation-button {
-        font-size: 0.7em; /* Ajustado para teléfono */
-        padding: 4px 12px; /* Ajustado para teléfono */
-        margin-bottom: 50px; /* Ajustado para teléfono */
+        font-size: 0.7em; 
+        padding: 4px 12px; 
+        margin-bottom: 50px; 
     }
 
     .home-description-title {
-        font-size: 1.5em; /* Ajustado para teléfono */
+        font-size: 1.5em; 
     }
 
     .home-description-subtitle {
-        font-size: 0.7em; /* Ajustado para teléfono */
+        font-size: 0.7em;
     }
 
     .home-description-text {
-        margin: 10px 15px 0; /* Ajustado para teléfono */
-        font-size: 0.6em; /* Ajustado para teléfono */
+        margin: 10px 15px 0;
+        font-size: 0.6em; 
     }
 
     .countdown-title {
-        font-size: 0.7em; /* Ajustado para teléfono */
-        margin: 20px auto 15px; /* Ajustado para teléfono */
+        font-size: 0.7em; 
+        margin: 20px auto 15px; 
     }
 
     .countdown-span {
-        font-size: 0.6em; /* Ajustado para teléfono */
+        font-size: 0.6em; 
     }
 
     .days {
-        font-size: 4em; /* Ajustado para teléfono */
+        font-size: 4em;
     }
 
     .hours,
     .minutes,
     .seconds {
-        font-size: 1.2em; /* Ajustado para teléfono */
-        width: 80px; /* Ajustado para teléfono */
+        font-size: 1.2em; 
+        width: 80px; 
     }
 }
