@@ -28,7 +28,7 @@ function ProjectCard({ project }) {
           <h2 className="project-card-name">{project.nombre}</h2>
           <h3 className="project-card-type">{project.tipo}</h3>
         </div>
-        <Link to={`/proyectos/${project.nombre}`}>
+        <Link to={`/proyectos/${project.id}/${project.nombre}`}>
           <button className="project-card-button">VER MÁS</button>
         </Link>
       </div>

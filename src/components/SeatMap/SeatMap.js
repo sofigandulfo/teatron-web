@@ -48,9 +48,7 @@ function SeatMap({ columns, onSeatChange, reservedSeats, maxSelectableSeats = 3 
               return (
                 <div
                   key={colIndex}
-                  className={`seat ${isSelected ? "selected" : ""} ${isOccupied ? "unavailable" : ""} ${
-                    colIndex === 5 ? "spacer" : ""
-                  }`}
+                  className={`seat ${isSelected ? "selected" : ""} ${isOccupied ? "unavailable" : ""} ${colIndex === 5 ? "spacer" : ""}`}
                   onClick={() => !isOccupied && toggleSeat(rowLabel, colIndex + 1)}
                 >
                   {colIndex + 1}

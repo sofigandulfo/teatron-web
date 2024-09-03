@@ -6,9 +6,12 @@ import ProjectCarrousel from "../components/ProjectCarrousel/ProjectCarrousel";
 import ReservationButton from "../components/ReservationButton/ReservationButton";
 
 function ProjectDetail() {
-  const { projectName } = useParams();
+  const { id, projectName } = useParams();
+
   const projecto = projectData.find(
-    (project) => project.nombre.toString() === projectName
+    (project) =>
+      project.id.toString() === id &&
+      project.nombre.toString() === projectName
   );
 
   if (!projecto) {

@@ -44,7 +44,7 @@ function Home() {
       </svg>
 
       <div className="home-data">
-        <h3 className="home-data-date">5 DE JULIO · 13:30H</h3>
+        <h3 className="home-data-date">7 DE SEPTIEMBRE · 12:00H</h3>
         <p className="home-data-info">EVENTO DE TEATRO</p>
         <a href="https://maps.app.goo.gl/7x6vMpULyi5JDeb2A" target="_blank" rel="noreferrer noopener" className="home-direction-link">
           <p className="home-data-info">
@@ -64,7 +64,7 @@ function Home() {
             ¡Preparate para vivir una jornada de pura pasión artística en la 
             <strong> TEATRON 2024!</strong>
             <br /><br />
-            <strong>+20 proyectos en vivo: </strong> <br/>
+            <strong>+25 proyectos en vivo: </strong> <br/>
             desde apasionantes obras de teatro
             hasta otras formas de expresión, la Teatron es el lugar donde la
             diversidad y la innovación se encuentran.
@@ -75,7 +75,7 @@ function Home() {
             ante tus ojos.
           </p>
         </article>
-        <CountdownDate eventTimestamp={1720182600} />
+        <CountdownDate eventTimestamp={1725710400} />
       </section>
     </>
   );

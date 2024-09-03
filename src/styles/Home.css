@@ -24,6 +24,8 @@
     margin-bottom: 15px;
     font-weight: 800;
     text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
 }
 
 .home-data-info {

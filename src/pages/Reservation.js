@@ -1,12 +1,4 @@
-import {
-  collection,
-  doc,
-  setDoc,
-  getDoc,
-  addDoc,
-  updateDoc,
-  onSnapshot,
-} from "firebase/firestore";
+import { collection, doc, setDoc, getDoc, addDoc, updateDoc, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
 import { getAuth, onAuthStateChanged  } from "firebase/auth";
 import { useState, useEffect } from "react";
@@ -82,10 +74,7 @@ function Reservation() {
 
         if (unavailableSeats.length > 0) {
           setError(
-            `Los siguientes asientos ya no están disponibles: ${unavailableSeats.join(
-              ", "
-            )}`
-          );
+            `Los siguientes asientos ya no están disponibles: ${unavailableSeats.join(", ")}`);
           setLoading(false);
           return;
         }
@@ -195,15 +184,9 @@ function Reservation() {
     setError("Por favor, inicie sesión para continuar con la reserva.");
   };
 
-  return (
-    <>
-      <p className="p-info">
-        Para seleccionar los asientos, haz click sobre una ubicación disponible.{" "}
-        <br />
-        Esta pantalla es un indicador de la disposición de las ubicaciones en la
-        sala, <br /> y no representa distancias reales.
-      </p>
-      <Snackbar
+  const Alertas = () => {
+    return (<>
+     <Snackbar
         open={Boolean(error)}
         autoHideDuration={6000}
         onClose={() => setError(null)}
@@ -231,6 +214,18 @@ function Reservation() {
           {successMessage}
         </MuiAlert>
       </Snackbar>
+    </>)
+  }
+
+  return (
+    <>
+     <Alertas />
+      <p className="p-info">
+        Para seleccionar los asientos, haz click sobre una ubicación disponible.
+        <br />
+        Esta pantalla es un indicador de la disposición de las ubicaciones en la
+        sala, y no representa distancias reales.
+      </p>
       <section className="reservation-section">
         <article className="seatmap">
           <SeatMap

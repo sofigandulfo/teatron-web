@@ -13,7 +13,7 @@ function Lineup() {
               <tr key={project.id} className="lineup-tablerow">
                 <td className="lineup-td">{project.hora}</td>
                 <td className="lineup-td">
-                  <Link to={`/proyectos/${encodeURIComponent(project.nombre)}`}>
+                  <Link to={`/proyectos/${project.id}/${encodeURIComponent(project.nombre)}`}>
                     {project.nombre}
                   </Link>
                 </td>

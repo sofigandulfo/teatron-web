@@ -26,7 +26,7 @@ function App() {
           <Route path="/reservar/:projectName" element={<Reservation />} />
           <Route path="/login" element={<SignIn />} />
           <Route path="/registro" element={<Register />} />
-          <Route path="/proyectos/:projectName" element={<ProjectDetail />} />
+          <Route path="/proyectos/:id/:projectName" element={<ProjectDetail />} />
         </Routes>
         <Footer />
       </div>
