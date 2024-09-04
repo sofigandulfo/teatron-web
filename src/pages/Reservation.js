@@ -256,7 +256,7 @@ function Reservation() {
                   </div>
                   <p className="project-ubicacion">OLIDEN 1245, MATADEROS</p>
                   <p className="project-fecha">
-                    VIERNES 5 JULIO {proyecto.hora}
+                    SABADO 7 DE SEPTIEMBRE {proyecto.hora}
                   </p>
                 </div>
               </div>
