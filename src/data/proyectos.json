@@ -21,17 +21,7 @@
       "tipo": "Obra de teatro",
       "foto": "PERFORMANCE.avif"
     },
-    {
-      "id": 3,
-      "nombre": "NUEVE REINAS",
-      "descripcion": "Juan y Marcos son dos estafadores que casualmente se ven involucrados en un asunto que los puede convertir en millonarios: tienen menos de un día para llevar a cabo un engaño que no puede fallar.",
-      "integrantes": "Uma Soria, Lupita Sambuceti, Camilo Olivera",
-      "duracion": "4 minutos",
-      "hora": "12:30",
-      "espacio": "Escenario",
-      "tipo": "Obra de teatro",
-      "foto": "NUEVE-REINAS.avif"
-    },
+
     {
       "id": 4,
       "nombre": "SENTIMIENTOS",
